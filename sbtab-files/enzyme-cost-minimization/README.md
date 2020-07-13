@@ -1,7 +1,5 @@
-SBtab example files
-==========================================
-
-Example SBtab files used for Enzyme Cost Minimization
+SBtab files used in Enzyme Cost Minimization
+============================================
 
 The files are copies from the [enzyme-cost-minimization](https://github.com/liebermeister/enzyme-cost-minimization) github repository. The two directories contain alternative SBtab implementations of the same E. coli central metabolism model from *Noor et al. (2016)* (reference below). : 
 
