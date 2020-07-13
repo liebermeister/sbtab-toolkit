@@ -9,4 +9,4 @@ The repository is still empty - files will come soon!
 This package is released under the [GNU General Public License](LICENSE).
 
 ## Contact
-Please contact [Wolfram Liebermeister](wolfram.liebermeister@gmail.com) with any questions or comments.
+Please contact [Wolfram Liebermeister](mailto:wolfram.liebermeister@gmail.com) with any questions or comments.
