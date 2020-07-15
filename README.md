@@ -1,7 +1,9 @@
-SBtab toolkit
-==========================================
+SBtab modeling toolkit
+======================
 
-SBtab example files (SBtab subformat "sbtab-toolkit")
+SBtab example and schema files for the SBtab modeling toolkit (currently under devlopment).
+
+For SBtab, please see [www.sbtab.net](www.sbtab.net) and the github repositories tlubitz/SBtab and liebermeister/sbtab-matlab
 
 ## License
 This package is released under the [GNU General Public License](LICENSE).
