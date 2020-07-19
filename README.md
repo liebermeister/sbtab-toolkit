@@ -1,7 +1,7 @@
-SBtab modeling toolkit
-======================
+SBtab modelling toolkit
+=======================
 
-SBtab example and schema files for the SBtab modeling toolkit (currently under devlopment).
+SBtab example and schema files for the SBtab modelling toolkit (currently under development).
 
 For SBtab, please see [www.sbtab.net](www.sbtab.net) and the github repositories tlubitz/SBtab and liebermeister/sbtab-matlab
 
