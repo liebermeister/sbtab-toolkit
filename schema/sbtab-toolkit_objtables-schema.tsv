@@ -1,0 +1,274 @@
+!!ObjTables type='Schema' tableFormat='row' name='SBtab' description='sbtab-toolkit schema' date='2019-9-13' objTablesVersion='0.0.8'				
+!Name	!Type	!Parent	!Format	!Description
+				
+Comment	Attribute	Reaction	String	Comment
+ReferenceName	Attribute	Reaction	String	Reference title, authors, etc. (as free text)
+ReferencePubMed	Attribute	Reaction	String	Reference PubMed ID
+ReferenceDOI	Attribute	Reaction	String	Reference DOI
+Description	Attribute	Reaction	String	Description of the row element
+Modifier	Attribute	Reaction	String	Modifier of this reaction
+Name	Attribute	Reaction	String	Entity name
+MiriamAnnotations	Attribute	Reaction	String	Entity ID
+Type	Attribute	Reaction	String	Biochemical type of entity
+Symbol	Attribute	Reaction	String	Short symbol (e.g. gene symbol)
+PositionX	Attribute	Reaction	Float	x coordinate for graphical display
+PositionY	Attribute	Reaction	Float	y coordinate for graphical display
+ID	Attribute	Reaction	String	Reaction shortname
+SBML:reaction:id	Attribute	Reaction	String	SBML ID of reaction
+ReactionFormula	Attribute	Reaction	LongString	Reaction formula
+Location	Attribute	Reaction	String	Compartment for localised reaction
+Enzyme	Attribute	Reaction	String	Enzyme catalysing the reaction
+Model	Attribute	Reaction	String	Model(s) in which the reaction is involved
+Pathway	Attribute	Reaction	String	Pathway(s) in which the reaction is involved
+SubreactionOf	Attribute	Reaction	String	Mark as subreaction of a (lumped) reaction
+IsComplete	Attribute	Reaction	Boolean	Reaction formula includes all cofactors etc.
+IsReversible	Attribute	Reaction	Boolean	Reaction should be treated as irreversible
+IsInEquilibrium	Attribute	Reaction	Boolean	Reaction approximately in equilibrium
+IsExchangeReaction	Attribute	Reaction	Boolean	Some reactants are left out
+Flux	Attribute	Reaction	Float	Metabolic flux through the reaction
+IsNonEnzymatic	Attribute	Reaction	Boolean	Non-catalysed reaction
+KineticLaw	Attribute	Reaction	LongString	Kinetic law of the reaction
+KineticLaw:Name	Attribute	Reaction	String	Name of the kinetic law
+KineticLaw:Formula	Attribute	Reaction	String	Rate law formula
+Gene	Attribute	Reaction	String	Name of the gene for the catalysing enzyme
+Gene:Symbol	Attribute	Reaction	String	Name of the gene for the catalysing enzyme
+Operon	Attribute	Reaction	String	Operon for the gene of the catalysing enzyme
+Enzyme:SBML:species:id	Attribute	Reaction	String	SBML ID of enzyme
+Enzyme:SBML:parameter:id	Attribute	Reaction	String	SBML ID of enzyme
+BuildReaction	Attribute	Reaction	Boolean	Include reaction in SBML model
+BuildEnzyme	Attribute	Reaction	Boolean	Include enzyme in SBML model
+BuildEnzymeProduction	Attribute	Reaction	Boolean	Describe enzyme production in SBML model
+SBOTerm	Attribute	Reaction	String	SBO term of the entity
+Identifiers	Attribute	Reaction	String	Annotation of the entity
+Identifiers:kegg.reaction	Attribute	Reaction	String	Annotation of the entity
+Identifiers:obo.sbo	Attribute	Reaction	String	Annotation of the entity
+Identifiers:ec-code	Attribute	Reaction	String	Annotation of the entity
+SBML:fbc:GeneAssociation	Attribute	Reaction	LongString	Gene Association from the FBC package
+SBML:fbc:LowerBound	Attribute	Reaction	String	Reactions Lower Bound of the FBC package
+SBML:fbc:UpperBound	Attribute	Reaction	String	Reactions Upper Bound of the FBC package
+Regulator	Attribute	Reaction	String	
+NameForPlots	Attribute	Reaction	String	
+				
+Comment	Attribute	Compound	String	Comment
+ReferenceName	Attribute	Compound	String	Reference title, authors, etc. (as free text)
+ReferencePubMed	Attribute	Compound	String	Reference PubMed ID
+ReferenceDOI	Attribute	Compound	String	Reference DOI
+Description	Attribute	Compound	String	Description of the row element
+Name	Attribute	Compound	String	Entity name
+MiriamAnnotations	Attribute	Compound	String	Entity ID
+Type	Attribute	Compound	String	Biochemical type of entity
+Symbol	Attribute	Compound	String	Short symbol (e.g. gene symbol)
+PositionX	Attribute	Compound	Float	x coordinate for graphical display
+PositionY	Attribute	Compound	Float	y coordinate for graphical display
+ID	Attribute	Compound	String	Compound shortname
+SBML:species:id	Attribute	Compound	String	SBML species ID of the entity
+SBML:speciestype:id	Attribute	Compound	String	SBML speciestype ID of the entity
+InitialValue	Attribute	Compound	Float	Initial amount or concentration
+InitialConcentration	Attribute	Compound	Float	Initial amount or concentration
+Unit	Attribute	Compound	String	Unit for initial value
+Location	Attribute	Compound	String	Compartment for localised entities
+State	Attribute	Compound	String	State of the entity
+CompoundSumFormula	Attribute	Compound	String	Chemical sum formula
+StructureFormula	Attribute	Compound	String	Chemical structure formula
+Charge	Attribute	Compound	Integer	Electrical charge number
+Mass	Attribute	Compound	Float	Molecular mass
+IsConstant	Attribute	Compound	Boolean	Substance with fixed concentrations
+EnzymeRole	Attribute	Compound	String	Enzymatic activity
+RegulatorRole	Attribute	Compound	String	Regulatory activity
+SBOTerm	Attribute	Compound	String	SBO term of the entity
+Identifiers	Attribute	Compound	String	Annotation of the entity
+Identifiers:sbo.kegg	Attribute	Compound	String	Annotation of the entity
+Identifiers:kegg.compound	Attribute	Compound	String	Annotation of the entity
+Identifiers:obo.chebi	Attribute	Compound	String	Annotation of the entity
+SBML:fbc:ChemicalFormula	Attribute	Compound	String	Compounds chemical formula for the FBC package
+SBML:fbc:Charge	Attribute	Compound	Float	Compounds charge for the FBC package
+HasOnlySubstanceUnits	Attribute	Compound	Boolean	
+NameForPlots	Attribute	Compound	String	
+				
+Comment	Attribute	Enzyme	String	Comment
+ReferenceName	Attribute	Enzyme	String	Reference title, authors, etc. (as free text)
+ReferencePubMed	Attribute	Enzyme	String	Reference PubMed ID
+ReferenceDOI	Attribute	Enzyme	String	Reference DOI
+Description	Attribute	Enzyme	String	Description of the row element
+Name	Attribute	Enzyme	String	Entity name
+MiriamAnnotations	Attribute	Enzyme	String	Entity ID
+Type	Attribute	Enzyme	String	Biochemical type of entity
+Symbol	Attribute	Enzyme	String	Short symbol (e.g. gene symbol)
+PositionX	Attribute	Enzyme	Float	x coordinate for graphical display
+PositionY	Attribute	Enzyme	Float	y coordinate for graphical display
+ID	Attribute	Enzyme	String	Enzyme shortname
+CatalysedReaction	Attribute	Enzyme	String	Catalysed reaction
+KineticLaw	Attribute	Enzyme	String	Catalysed reaction
+KineticLaw:Name	Attribute	Enzyme	String	Name of the kinetic law
+KineticLaw:Formula	Attribute	Enzyme	String	Rate law formula
+Pathway	Attribute	Enzyme	String	Pathway name (free text)
+Gene	Attribute	Enzyme	String	Gene coding for enzyme (shortname)
+Identifiers	Attribute	Enzyme	String	Annotation of the entity
+				
+Comment	Attribute	Protein	String	Comment
+ReferenceName	Attribute	Protein	String	Reference title, authors, etc. (as free text)
+ReferencePubMed	Attribute	Protein	String	Reference PubMed ID
+ReferenceDOI	Attribute	Protein	String	Reference DOI
+Description	Attribute	Protein	String	Description of the row element
+Name	Attribute	Protein	String	Entity name
+MiriamAnnotations	Attribute	Protein	String	Entity ID
+Type	Attribute	Protein	String	Biochemical type of entity
+Symbol	Attribute	Protein	String	Short symbol (e.g. gene symbol)
+PositionX	Attribute	Protein	Float	x coordinate for graphical display
+PositionY	Attribute	Protein	Float	y coordinate for graphical display
+ID	Attribute	Protein	String	Protein shortname
+Gene	Attribute	Protein	String	Gene shortname
+Mass	Attribute	Protein	Float	Protein mass
+Size	Attribute	Protein	Float	Protein size
+				
+Comment	Attribute	Compartment	String	Comment
+ReferenceName	Attribute	Compartment	String	Reference title, authors, etc. (as free text)
+ReferencePubMed	Attribute	Compartment	String	Reference PubMed ID
+ReferenceDOI	Attribute	Compartment	String	Reference DOI
+Description	Attribute	Compartment	String	Description of the row element
+Name	Attribute	Compartment	String	Entity name
+MiriamAnnotations	Attribute	Compartment	String	Entity ID
+Type	Attribute	Compartment	String	Biochemical type of entity
+Symbol	Attribute	Compartment	String	Short symbol (e.g. gene symbol)
+PositionX	Attribute	Compartment	Float	x coordinate for graphical display
+PositionY	Attribute	Compartment	Float	y coordinate for graphical display
+ID	Attribute	Compartment	String	Compartment shortname
+SBML:compartment:id	Attribute	Compartment	String	SBML compartment ID
+OuterCompartment	Attribute	Compartment	String	Surrounding compartment (short)
+OuterCompartment:SBML:compartment:id	Attribute	Compartment	String	Surrounding compartment (name)
+Size	Attribute	Compartment	Float	Compartment size
+Unit	Attribute	Compartment	String	Physical unit
+SBOTerm	Attribute	Compartment	String	SBO term of the entity
+Identifiers	Attribute	Compartment	String	Annotation of the entity
+Identifiers:sbo.go	Attribute	Compartment	String	Annotation of the entity
+				
+Comment	Attribute	Quantity	String	Comment
+ReferenceName	Attribute	Quantity	String	Reference title, authors, etc. (as free text)
+ReferencePubMed	Attribute	Quantity	String	Reference PubMed ID
+ReferenceDOI	Attribute	Quantity	String	Reference DOI
+Description	Attribute	Quantity	String	Description of the row element
+Name	Attribute	Quantity	String	Entity name
+MiriamAnnotations	Attribute	Quantity	String	Entity ID
+Type	Attribute	Quantity	String	Biochemical type of entity
+Symbol	Attribute	Quantity	String	Short symbol (e.g. gene symbol)
+PositionX	Attribute	Quantity	Float	x coordinate for graphical display
+PositionY	Attribute	Quantity	Float	y coordinate for graphical display
+ID	Attribute	Quantity	String	Quantity shortname
+Quantity	Attribute	Quantity	String	Quantity name
+Reference	Attribute	Quantity	String	Reference name
+QuantityName	Attribute	Quantity	String	Quantity (name)
+QuantityType	Attribute	Quantity	String	Quantity type (e.g. from SBO)
+Value	Attribute	Quantity	Float	Simple value
+Mean	Attribute	Quantity	Float	Algebraic mean
+Std	Attribute	Quantity	Float	Standard deviation (positive)
+Min	Attribute	Quantity	Float	Lower bound
+Max	Attribute	Quantity	Float	Upper bound
+Median	Attribute	Quantity	Float	Median
+GeometricMean	Attribute	Quantity	Float	Geometric mean
+Sign	Attribute	Quantity	Enum(['+', '-', '0'], default='0')	Sign
+ProbDist	Attribute	Quantity	String	Probability distribution
+SBML:parameter:id	Attribute	Quantity	String	Parameter ID in SBML file
+Unit	Attribute	Quantity	String	Physical unit
+Scale	Attribute	Quantity	String	Scale (e.g. logarithm)
+Time	Attribute	Quantity	Float	Time value
+TimePoint	Attribute	Quantity	String	Time point name or identifier
+Condition	Attribute	Quantity	String	experimental condition name (free text)
+pH	Attribute	Quantity	Float	pH value in measurement
+Temperature	Attribute	Quantity	Float	Temperature in measurement
+Location	Attribute	Quantity	String	Compartment (shortname)
+Location:SBML:compartment:id	Attribute	Quantity	String	SBML ID of compartment
+Compound	Attribute	Quantity	String	Related compound (shortname)
+Compound:SBML:species:id	Attribute	Quantity	String	SBML ID of compound
+Reaction	Attribute	Quantity	String	Related reaction (shortname)
+Reaction:SBML:reaction:id	Attribute	Quantity	String	SBML ID of reaction
+Enyzme	Attribute	Quantity	String	Related enzyme (shortname)
+Enyzme:SBML:species:id	Attribute	Quantity	String	SBML ID of enzyme
+Enyzme:SBML:parameter:id	Attribute	Quantity	String	SBML ID of enzyme
+Gene	Attribute	Quantity	String	Related gene
+Organism	Attribute	Quantity	String	Organism
+Provenance	Attribute	Quantity	String	Provenance of the entity
+SBOTerm	Attribute	Quantity	String	SBO term of the entity
+Identifiers	Attribute	Quantity	String	Annotation of the entity
+Identifiers:kegg.reaction	Attribute	Quantity	String	Annotation of the entity
+Identifiers:kegg.compound	Attribute	Quantity	String	Annotation of the entity
+Identifiers:obo.chebi	Attribute	Quantity	String	Annotation of the entity
+Reaction:Identifiers:kegg.reaction	Attribute	Quantity	String	Annotation of the entity
+Compound:Identifiers:kegg.compound	Attribute	Quantity	String	Annotation of the entity
+BiologicalElement	Attribute	Quantity	String	Biological element
+MathematicalType	Attribute	Quantity	String	Mathematical type
+DataGeometricStd	Attribute	Quantity	Float	Data geometric standard error
+PriorMedian	Attribute	Quantity	Float	Prior Median
+PriorStd	Attribute	Quantity	Float	Prior Std
+PriorGeometricStd	Attribute	Quantity	Float	Prior Geometric Std
+LowerBound	Attribute	Quantity	Float	Lower bound
+UpperBound	Attribute	Quantity	Float	Lower bound
+DataStd	Attribute	Quantity	Float	Data Standard Error
+PhysicalType	Attribute	Quantity	String	Physical Type
+Dependence	Attribute	Quantity	String	Dependence
+UseAsPriorInformation	Attribute	Quantity	Boolean	Use as prior information
+SBMLElement	Attribute	Quantity	String	SBML element
+Abbreviation	Attribute	Quantity	String	Abbreviation
+MatrixInfo	Attribute	Quantity	String	Matrix build up information
+SBO:equilibrium_constant	Attribute	Quantity	Float	
+SBO:Identifiers:obo.sbo	Attribute	Quantity	String	
+SBO:concentration	Attribute	Quantity	Float	
+SBO:concentration [mM:Log10]:Median	Attribute	Quantity	Float	
+ValueType	Attribute	Quantity	String	
+Concentration:Min	Attribute	Quantity	Float	
+Concentration:Max	Attribute	Quantity	Float	
+Parameter:SBML:parameter:id	Attribute	Quantity	String	
+				
+QuantityType	Attribute	QuantityInfo	String	QuantityType (e.g. from SBO)
+Symbol	Attribute	QuantityInfo	String	Symbol for the quantity type
+Unit	Attribute	QuantityInfo	String	Unit for the Median value
+Constant	Attribute	QuantityInfo	String	Is this value constant
+Element	Attribute	QuantityInfo	String	A related element
+RelatedElement	Attribute	QuantityInfo	String	A related element
+Scaling	Attribute	QuantityInfo	String	A scaling factor
+Dependence	Attribute	QuantityInfo	String	Is this value dependent on something
+PriorMedian	Attribute	QuantityInfo	Float	Prior median value
+PriorStd	Attribute	QuantityInfo	Float	Prior median standard deviation
+LowerBound	Attribute	QuantityInfo	Float	Lower bound for this quantity type
+UpperBound	Attribute	QuantityInfo	Float	Upper bound for this quantity type
+ErrorStd	Attribute	QuantityInfo	Float	Error of standard deviation
+DataStd	Attribute	QuantityInfo	Float	Error of standard deviation
+SBMLElement	Attribute	QuantityInfo	String	Corresponding SBML element
+SBMLElementType	Attribute	QuantityInfo	String	Corresponding SBML element
+Abbreviation	Attribute	QuantityInfo	String	Abbreviation of quantity type
+ID	Attribute	QuantityInfo	String	Abbreviation of quantity type
+MatrixInfo	Attribute	QuantityInfo	String	Information on the matrix production
+				
+Option	Attribute	Config	String	Which option is addressed
+Value	Attribute	Config	String	What value is the option set to
+Comment	Attribute	Config	String	Description of tool option
+				
+ID	Attribute	FbcObjective	String	Unique identifier of objective in FBC package
+Name	Attribute	FbcObjective	String	Name of objective in FBC package
+SBML:fbc:type	Attribute	FbcObjective	String	Type of objective in FBC package
+SBML:fbc:active	Attribute	FbcObjective	Boolean	Flag indicating if the objective is active
+SBML:fbc:objective	Attribute	FbcObjective	String	FBC objective as sum of coefficients times reaction IDs
+SBML:fbc:reaction	Attribute	FbcObjective	String	
+				
+ID	Attribute	Layout	String	Unique identifier of layout package
+Name	Attribute	Layout	String	Name of layout in plugin
+SBML:layout:modelEntity	Attribute	Layout	String	Declares the SBML model entity
+SBML:layout:compartment:id	Attribute	Layout	String	SBML identifier of the compartment
+SBML:layout:reaction:id	Attribute	Layout	String	SBML identifier of the reaction
+SBML:layout:species:id	Attribute	Layout	String	SBML identifier of the species
+SBML:layout:curveSegment	Attribute	Layout	String	Type of curve segment (Start, End, BasePoints)
+SBML:layout:X	Attribute	Layout	Float	Coordinate on X axis
+SBML:layout:Y	Attribute	Layout	Float	Coordinate on Y axis
+SBML:layout:width	Attribute	Layout	Float	Width of the element
+SBML:layout:height	Attribute	Layout	Float	Height of the element
+SBML:layout:text	Attribute	Layout	String	Text label of the element
+SBML:layout:speciesRole	Attribute	Layout	String	Role of the species in the reaction (Reactant, Product)
+				
+Element	Attribute	Position	String	
+PositionX	Attribute	Position	Float	
+PositionY	Attribute	Position	Float	
+				
+Thermodynamics	Class	Quantity		TableType Thermodynamics
+Parameter	Class	Quantity		TableType Parameter
+Flux	Class	Quantity		TableType Flux
+ConcentrationConstraint	Class	Quantity		TableType ConcentrationConstraint
+EnzymeCostWeight	Class	Quantity		TableType EnzymeCostWeight
