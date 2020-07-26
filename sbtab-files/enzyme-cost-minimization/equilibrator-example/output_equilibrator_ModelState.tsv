@@ -1,0 +1,450 @@
+!!!SBtab Document='Model' DocumentName='ECM metabolic state'				
+				
+!!SBtab TableID='Reaction' TableType='Reaction' TableName='Reaction'				
+!ID	!ReactionFormula	!Name	!IsReversible	
+pts	glc + pep <=> pyr + g6p	pts	True	
+pgi	g6p <=> f6p	pgi	True	
+pfk	atp + f6p <=> adp + fbp	pfk	True	
+fba	fbp <=> dhap + g3p	fba	True	
+tpi	dhap <=> g3p	tpi	True	
+gap	pi + nad + g3p <=> nadh + bpg	gap	True	
+pgk	adp + bpg <=> atp + _3pg	pgk	True	
+gpm	_3pg <=> _2pg	gpm	True	
+eno	_2pg <=> pep	eno	True	
+pyk	adp + pep <=> pyr + atp	pyk	True	
+pdh	pyr + nad + coa <=> acecoa + nadh + co2	pdh	True	
+zwf	nadp + g6p <=> nadph + gluc6p	zwf	True	
+pgl	gluc6p <=> _6pg	pgl	True	
+gnd	_6pg + nadp <=> nadph + ru5p + co2	gnd	True	
+rpi	ru5p <=> r5p	rpi	True	
+rpe	ru5p <=> xu5p	rpe	True	
+tkt1	xu5p + r5p <=> g3p + s7p	tkt1	True	
+tal	g3p + s7p <=> e4p + f6p	tal	True	
+tkt2	e4p + xu5p <=> g3p + f6p	tkt2	True	
+fbp	fbp <=> pi + f6p	fbp	True	
+gltA	acecoa + oxa <=> coa + cit	gltA	True	
+acn1	cit <=> aco	acn1	True	
+acn2	aco <=> icit	acn2	True	
+icd	nad + icit <=> nadh + _2kg + co2	icd	True	
+kgd	nad + _2kg + coa <=> nadh + co2 + succoa	kgd	True	
+suc	pi + adp + succoa <=> atp + coa + suc	suc	True	
+sdh	uql + suc <=> fum + uqn	sdh	True	
+fum	fum <=> mal	fum	True	
+mdh	mal + nad <=> nadh + oxa	mdh	True	
+ppc	pi + oxa <=> co2 + pep	ppc	True	
+				
+!!SBtab TableID='Compound' TableType='Compound' TableName='Compound'				
+!ID	!Name	!Identifiers:kegg.compound	!IsConstant	!InitialConcentration
+mal	mal	C00149	False	0.79541207
+acecoa	acecoa	C00024	False	0.20844048
+fum	fum	C00122	False	0.28437116
+aco	aco	C00417	False	0.089463641
+_6pg	_6pg	C00345	False	0.13272855
+pi	pi	C00009	False	8.3162484
+pyr	pyr	C00022	False	0.092421243
+nadp	nadp	C00006	False	0.13754596
+nadph	nadph	C00005	False	0.07385911
+nadh	nadh	C00004	False	0.0023823172
+nad	nad	C00003	False	8.3310535
+atp	atp	C00002	False	0.84185894
+h2o	h2o	C00001	False	0.10000041
+_2kg	_2kg	C00026	False	0.11957643
+oxa	oxa	C00036	False	0.014268509
+uql	uql	C00399	False	0.10237136
+e4p	e4p	C00279	False	0.081994949
+uqn	uqn	C00390	False	0.099974151
+adp	adp	C00008	False	0.22836998
+icit	icit	C00311	False	0.028398385
+ru5p	ru5p	C00199	False	0.19750325
+xu5p	xu5p	C00231	False	0.50297698
+g6p	g6p	C00092	False	1.2338761
+bpg	bpg	C00236	False	0.035750035
+coa	coa	C00010	False	0.0830334
+co2	co2	C00011	False	0.1007582
+r5p	r5p	C00117	False	0.30175048
+dhap	dhap	C00111	False	1.3192776
+glc	glc	C00031	False	0.12309802
+fbp	fbp	C00354	False	2.9001327
+g3p	g3p	C00118	False	0.12034579
+pep	pep	C00074	False	0.085657009
+cit	cit	C00158	False	8.4746077
+succoa	succoa	C00091	False	0.14998177
+_3pg	_3pg	C00197	False	1.9173799
+gluc6p	gluc6p	C01236	False	0.10359715
+f6p	f6p	C00085	False	0.10860044
+_2pg	_2pg	C00631	False	0.12532364
+suc	suc	C00042	False	0.098003101
+s7p	s7p	C05382	False	0.48442038
+				
+!!SBtab TableID='Position' TableType='Position' TableName='Position'				
+!Element	!PositionX	!PositionY		
+mal	0.113842	0.43481318		
+acecoa	0.009486833	0.32255232		
+fum	0.25772563	0.44113773		
+aco	0.050596443	0.68305197		
+_6pg	0.34785054	0.90124913		
+pi	0.41583951	0.17866869		
+pyr	0.28618613	0.31622777		
+nadp	0.41742065	0.99137405		
+nadph	0.47750393	0.99927974		
+nadh	0.25456335	0.23400855		
+nad	0.26563132	0.19764235		
+atp	0.46327368	0.061664414		
+h2o	0.16443844	0.56288542		
+_2kg	0.19606121	0.32097118		
+oxa	0.075894664	0.39370357		
+uql	0.37314876	0.37314876		
+e4p	0.93603419	0.51070784		
+uqn	0.37631104	0.31622777		
+adp	0.45062457	0.0047434165		
+icit	0.2197783	0.57869681		
+ru5p	0.70676906	0.91073597		
+xu5p	0.88701888	0.69886336		
+g6p	0.52335695	0.70202564		
+bpg	0.57237226	0.12490997		
+coa	0.083800358	0.16918185		
+co2	0.18499324	0.42848862		
+r5p	0.94710216	0.81902991		
+dhap	0.93287191	0.26246905		
+glc	0.37156763	0.57079112		
+fbp	0.69570109	0.20554805		
+g3p	0.79847511	0.38896015		
+pep	0.30357866	0.41900179		
+cit	0	0.50754556		
+succoa	0.22926513	0.061664414		
+_3pg	0.49647759	0.13755908		
+gluc6p	0.3541751	0.95342671		
+f6p	0.73681069	0.38105446		
+_2pg	0.41267723	0.42848862		
+suc	0.30357866	0.15969502		
+s7p	0.99927974	0.5375872		
+pts	0.40635268	0.49805873		
+pgi	0.65775375	0.57237226		
+pfk	0.6229687	0.12332883		
+fba	0.82377333	0.27353702		
+tpi	0.92180394	0.35259396		
+gap	0.52335695	0.23717082		
+pgk	0.55497973	0		
+gpm	0.45220571	0.29409182		
+eno	0.29251068	0.52493809		
+pyk	0.35891851	0.16760072		
+pdh	0.12490997	0.25930677		
+zwf	0.49647759	0.90915483		
+pgl	0.25614449	0.83642244		
+gnd	0.43639432	0.85697725		
+rpi	0.84907155	0.91389824		
+rpe	0.82377333	0.8348413		
+tkt1	0.9692381	0.64510464		
+tal	0.91706052	0.41900179		
+tkt2	0.83642244	0.51861354		
+fbp	0.52493809	0.31939004		
+gltA	0.0015811388	0.40951496		
+acn1	0.05375872	0.58818364		
+acn2	0.14230249	0.66407831		
+icd	0.25140107	0.35101282		
+kgd	0.16760072	0.18024983		
+suc	0.32887688	0.042690748		
+sdh	0.30199752	0.3462694		
+fum	0.17866869	0.50438329		
+mdh	0.12490997	0.30357866		
+ppc	0.18973666	0.36840535		
+				
+!!SBtab TableID='Parameter' TableType='Quantity' TableName='Parameter'				
+!QuantityType	!Reaction	!Compound	!Mode	!Unit
+equilibrium constant	pts		53900000	dimensionless
+equilibrium constant	pgi		0.361	dimensionless
+equilibrium constant	pfk		663	dimensionless
+equilibrium constant	fba		0.174	dimensionless
+equilibrium constant	tpi		0.109	dimensionless
+equilibrium constant	gap		0.000121	dimensionless
+equilibrium constant	pgk		1750	dimensionless
+equilibrium constant	gpm		0.184	dimensionless
+equilibrium constant	eno		5.2	dimensionless
+equilibrium constant	pyk		61600	dimensionless
+equilibrium constant	pdh		1640000	dimensionless
+equilibrium constant	zwf		5.01	dimensionless
+equilibrium constant	pgl		7880	dimensionless
+equilibrium constant	gnd		13.7	dimensionless
+equilibrium constant	rpi		2.2	dimensionless
+equilibrium constant	rpe		3.89	dimensionless
+equilibrium constant	tkt1		4.76	dimensionless
+equilibrium constant	tal		1.29	dimensionless
+equilibrium constant	tkt2		57.2	dimensionless
+equilibrium constant	fbp		49700	dimensionless
+equilibrium constant	gltA		2050000	dimensionless
+equilibrium constant	acn1		0.0347	dimensionless
+equilibrium constant	acn2		1.33	dimensionless
+equilibrium constant	icd		92.6	dimensionless
+equilibrium constant	kgd		122000	dimensionless
+equilibrium constant	suc		0.436	dimensionless
+equilibrium constant	sdh		6560	dimensionless
+equilibrium constant	fum		4	dimensionless
+equilibrium constant	mdh		6.31e-06	dimensionless
+equilibrium constant	ppc		3.98e-07	dimensionless
+catalytic rate constant geometric mean	pts		0.12409807	1/s
+catalytic rate constant geometric mean	pgi		17.845376	1/s
+catalytic rate constant geometric mean	pfk		12.466487	1/s
+catalytic rate constant geometric mean	fba		19.043212	1/s
+catalytic rate constant geometric mean	tpi		967.72435	1/s
+catalytic rate constant geometric mean	gap		170.19055	1/s
+catalytic rate constant geometric mean	pgk		233.44102	1/s
+catalytic rate constant geometric mean	gpm		116.34379	1/s
+catalytic rate constant geometric mean	eno		56.257735	1/s
+catalytic rate constant geometric mean	pyk		1.4715221	1/s
+catalytic rate constant geometric mean	pdh		1.7322436	1/s
+catalytic rate constant geometric mean	zwf		308.82966	1/s
+catalytic rate constant geometric mean	pgl		5.0830587	1/s
+catalytic rate constant geometric mean	gnd		139.3736	1/s
+catalytic rate constant geometric mean	rpi		1067.6854	1/s
+catalytic rate constant geometric mean	rpe		472.17111	1/s
+catalytic rate constant geometric mean	tkt1		34.722097	1/s
+catalytic rate constant geometric mean	tal		5.0160825	1/s
+catalytic rate constant geometric mean	tkt2		24.609961	1/s
+catalytic rate constant geometric mean	fbp		93.683347	1/s
+catalytic rate constant geometric mean	gltA		66.52968	1/s
+catalytic rate constant geometric mean	acn1		4.2523582	1/s
+catalytic rate constant geometric mean	acn2		6.4413016	1/s
+catalytic rate constant geometric mean	icd		123.0221	1/s
+catalytic rate constant geometric mean	kgd		8.285338	1/s
+catalytic rate constant geometric mean	suc		94.792115	1/s
+catalytic rate constant geometric mean	sdh		82.161237	1/s
+catalytic rate constant geometric mean	fum		214.24008	1/s
+catalytic rate constant geometric mean	mdh		472.32725	1/s
+catalytic rate constant geometric mean	ppc		741.6567	1/s
+Michaelis constant	fum	mal	0.33982355	mM
+Michaelis constant	mdh	mal	3.4671612	mM
+Michaelis constant	pdh	acecoa	0.034948471	mM
+Michaelis constant	gltA	acecoa	0.016796255	mM
+Michaelis constant	sdh	fum	0.17788195	mM
+Michaelis constant	fum	fum	0.28540166	mM
+Michaelis constant	acn1	aco	0.024895769	mM
+Michaelis constant	acn2	aco	0.02581873	mM
+Michaelis constant	pgl	_6pg	0.031394406	mM
+Michaelis constant	gnd	_6pg	0.020016802	mM
+Michaelis constant	gap	pi	2.5828005	mM
+Michaelis constant	fbp	pi	0.89428843	mM
+Michaelis constant	suc	pi	1.6840799	mM
+Michaelis constant	ppc	pi	33.131279	mM
+Michaelis constant	pts	pyr	0.20090355	mM
+Michaelis constant	pyk	pyr	0.49347728	mM
+Michaelis constant	pdh	pyr	0.0099448178	mM
+Michaelis constant	zwf	nadp	0.0032217362	mM
+Michaelis constant	gnd	nadp	0.018919131	mM
+Michaelis constant	zwf	nadph	0.019079435	mM
+Michaelis constant	gnd	nadph	0.000816097	mM
+Michaelis constant	gap	nadh	0.018900595	mM
+Michaelis constant	pdh	nadh	0.17119182	mM
+Michaelis constant	icd	nadh	0.82421689	mM
+Michaelis constant	kgd	nadh	0.14633308	mM
+Michaelis constant	mdh	nadh	0.0040598563	mM
+Michaelis constant	gap	nad	0.27563112	mM
+Michaelis constant	pdh	nad	0.037981708	mM
+Michaelis constant	icd	nad	0.064715425	mM
+Michaelis constant	kgd	nad	0.011949674	mM
+Michaelis constant	mdh	nad	0.84774558	mM
+Michaelis constant	pfk	atp	0.11887834	mM
+Michaelis constant	pgk	atp	0.47324668	mM
+Michaelis constant	pyk	atp	0.40340266	mM
+Michaelis constant	suc	atp	0.044022749	mM
+Michaelis constant	icd	_2kg	0.82421689	mM
+Michaelis constant	kgd	_2kg	2.7790523	mM
+Michaelis constant	gltA	oxa	0.011423686	mM
+Michaelis constant	mdh	oxa	0.0050906431	mM
+Michaelis constant	ppc	oxa	33.131279	mM
+Michaelis constant	sdh	uql	0.021641358	mM
+Michaelis constant	tal	e4p	0.034213028	mM
+Michaelis constant	tkt2	e4p	0.66543296	mM
+Michaelis constant	sdh	uqn	6.6153388	mM
+Michaelis constant	pfk	adp	0.69430252	mM
+Michaelis constant	pgk	adp	0.17013656	mM
+Michaelis constant	pyk	adp	0.13316774	mM
+Michaelis constant	suc	adp	0.12316902	mM
+Michaelis constant	acn2	icit	0.12811848	mM
+Michaelis constant	icd	icit	1.5624793	mM
+Michaelis constant	gnd	ru5p	0.12842288	mM
+Michaelis constant	rpi	ru5p	1.7612629	mM
+Michaelis constant	rpe	ru5p	0.63880211	mM
+Michaelis constant	rpe	xu5p	0.34682668	mM
+Michaelis constant	tkt1	xu5p	0.90970004	mM
+Michaelis constant	tkt2	xu5p	0.88785622	mM
+Michaelis constant	pts	g6p	0.20090355	mM
+Michaelis constant	pgi	g6p	0.14690494	mM
+Michaelis constant	zwf	g6p	0.067634802	mM
+Michaelis constant	gap	bpg	0.016150282	mM
+Michaelis constant	pgk	bpg	0.0019702363	mM
+Michaelis constant	pdh	coa	0.0036497269	mM
+Michaelis constant	gltA	coa	49.878248	mM
+Michaelis constant	kgd	coa	0.011949674	mM
+Michaelis constant	suc	coa	0.042531357	mM
+Michaelis constant	pdh	co2	0.17119182	mM
+Michaelis constant	gnd	co2	21.071787	mM
+Michaelis constant	icd	co2	0.82421689	mM
+Michaelis constant	kgd	co2	0.14633308	mM
+Michaelis constant	ppc	co2	0.074103122	mM
+Michaelis constant	rpi	r5p	2.4387073	mM
+Michaelis constant	tkt1	r5p	0.9787818	mM
+Michaelis constant	fba	dhap	0.13792901	mM
+Michaelis constant	tpi	dhap	8.4336857	mM
+Michaelis constant	pts	glc	0.0085306826	mM
+Michaelis constant	pfk	fbp	0.024019267	mM
+Michaelis constant	fba	fbp	0.22861843	mM
+Michaelis constant	fbp	fbp	0.011409049	mM
+Michaelis constant	fba	g3p	0.11313464	mM
+Michaelis constant	tpi	g3p	0.07811155	mM
+Michaelis constant	gap	g3p	0.6115139	mM
+Michaelis constant	tkt1	g3p	1.7864213	mM
+Michaelis constant	tal	g3p	0.080048895	mM
+Michaelis constant	tkt2	g3p	1.8269798	mM
+Michaelis constant	pts	pep	0.0085306826	mM
+Michaelis constant	eno	pep	0.18307273	mM
+Michaelis constant	pyk	pep	0.16322598	mM
+Michaelis constant	ppc	pep	0.14431676	mM
+Michaelis constant	gltA	cit	0.0037852914	mM
+Michaelis constant	acn1	cit	0.45694327	mM
+Michaelis constant	kgd	succoa	0.083874911	mM
+Michaelis constant	suc	succoa	0.058355069	mM
+Michaelis constant	pgk	_3pg	0.66420882	mM
+Michaelis constant	gpm	_3pg	1.4803313	mM
+Michaelis constant	zwf	gluc6p	0.39946146	mM
+Michaelis constant	pgl	gluc6p	0.01428343	mM
+Michaelis constant	pgi	f6p	0.011864262	mM
+Michaelis constant	pfk	f6p	0.074139903	mM
+Michaelis constant	tal	f6p	0.45779507	mM
+Michaelis constant	tkt2	f6p	2.5229975	mM
+Michaelis constant	fbp	f6p	0.89428843	mM
+Michaelis constant	gpm	_2pg	0.015853975	mM
+Michaelis constant	eno	_2pg	0.41760902	mM
+Michaelis constant	suc	suc	0.9298655	mM
+Michaelis constant	sdh	suc	0.065475263	mM
+Michaelis constant	tkt1	s7p	1.4845287	mM
+Michaelis constant	tal	s7p	0.25474979	mM
+substrate catalytic rate constant	pts		38.042775	1/s
+substrate catalytic rate constant	pgi		37.961009	1/s
+substrate catalytic rate constant	pfk		373.3158	1/s
+substrate catalytic rate constant	fba		31.819526	1/s
+substrate catalytic rate constant	tpi		3313.7707	1/s
+substrate catalytic rate constant	gap		123.10146	1/s
+substrate catalytic rate constant	pgk		324.35816	1/s
+substrate catalytic rate constant	gpm		489.76688	1/s
+substrate catalytic rate constant	eno		192.95947	1/s
+substrate catalytic rate constant	pyk		70.779896	1/s
+substrate catalytic rate constant	pdh		79.104754	1/s
+substrate catalytic rate constant	zwf		186.41467	1/s
+substrate catalytic rate constant	pgl		481.0636	1/s
+substrate catalytic rate constant	gnd		201.3273	1/s
+substrate catalytic rate constant	rpi		1362.4099	1/s
+substrate catalytic rate constant	rpe		1261.3648	1/s
+substrate catalytic rate constant	tkt1		43.585601	1/s
+substrate catalytic rate constant	tal		6.5697728	1/s
+substrate catalytic rate constant	tkt2		67.303196	1/s
+substrate catalytic rate constant	fbp		2407.6401	1/s
+substrate catalytic rate constant	gltA		4738.6339	1/s
+substrate catalytic rate constant	acn1		3.4316827	1/s
+substrate catalytic rate constant	acn2		3.3186137	1/s
+substrate catalytic rate constant	icd		517.05153	1/s
+substrate catalytic rate constant	kgd		1149.7688	1/s
+substrate catalytic rate constant	suc		191.09763	1/s
+substrate catalytic rate constant	sdh		216.31991	1/s
+substrate catalytic rate constant	fum		391.96431	1/s
+substrate catalytic rate constant	mdh		807.48734	1/s
+substrate catalytic rate constant	ppc		237.60988	1/s
+product catalytic rate constant	pts		0.0004048162	1/s
+product catalytic rate constant	pgi		8.3890668	1/s
+product catalytic rate constant	pfk		0.41630516	1/s
+product catalytic rate constant	fba		11.396899	1/s
+product catalytic rate constant	tpi		282.60568	1/s
+product catalytic rate constant	gap		235.29229	1/s
+product catalytic rate constant	pgk		168.00783	1/s
+product catalytic rate constant	gpm		27.637389	1/s
+product catalytic rate constant	eno		16.40206	1/s
+product catalytic rate constant	pyk		0.03059311	1/s
+product catalytic rate constant	pdh		0.037932841	1/s
+product catalytic rate constant	zwf		511.63224	1/s
+product catalytic rate constant	pgl		0.053709086	1/s
+product catalytic rate constant	gnd		96.484687	1/s
+product catalytic rate constant	rpi		836.71744	1/s
+product catalytic rate constant	rpe		176.74946	1/s
+product catalytic rate constant	tkt1		27.661063	1/s
+product catalytic rate constant	tal		3.8298255	1/s
+product catalytic rate constant	tkt2		8.9988321	1/s
+product catalytic rate constant	fbp		3.6452995	1/s
+product catalytic rate constant	gltA		0.93406632	1/s
+product catalytic rate constant	acn1		5.2692956	1/s
+product catalytic rate constant	acn2		12.502319	1/s
+product catalytic rate constant	icd		29.270654	1/s
+product catalytic rate constant	kgd		0.059704895	1/s
+product catalytic rate constant	suc		47.020703	1/s
+product catalytic rate constant	sdh		31.205952	1/s
+product catalytic rate constant	fum		117.09947	1/s
+product catalytic rate constant	mdh		276.28053	1/s
+product catalytic rate constant	ppc		2314.9486	1/s
+protein molecular mass	pts		255848	Da
+protein molecular mass	pgi		61530	Da
+protein molecular mass	pfk		139360	Da
+protein molecular mass	fba		39147	Da
+protein molecular mass	tpi		53940	Da
+protein molecular mass	gap		35530	Da
+protein molecular mass	pgk		41120	Da
+protein molecular mass	gpm		28556	Da
+protein molecular mass	eno		45650	Da
+protein molecular mass	pyk		50000	Da
+protein molecular mass	pdh		282880	Da
+protein molecular mass	zwf		55700	Da
+protein molecular mass	pgl		36310	Da
+protein molecular mass	gnd		102960	Da
+protein molecular mass	rpi		19466	Da
+protein molecular mass	rpe		24554	Da
+protein molecular mass	tkt1		73043	Da
+protein molecular mass	tal		35219	Da
+protein molecular mass	tkt2		73043	Da
+protein molecular mass	fbp		36834	Da
+protein molecular mass	gltA		96020	Da
+protein molecular mass	acn1		95588	Da
+protein molecular mass	acn2		95588	Da
+protein molecular mass	icd		45760	Da
+protein molecular mass	kgd		1209180	Da
+protein molecular mass	suc		71170	Da
+protein molecular mass	sdh		792299	Da
+protein molecular mass	fum		60000	Da
+protein molecular mass	mdh		32337	Da
+protein molecular mass	ppc		198120	Da
+molecular mass		mal	134	Da
+molecular mass		acecoa	810	Da
+molecular mass		fum	116	Da
+molecular mass		aco	174	Da
+molecular mass		_6pg	276	Da
+molecular mass		pi	98	Da
+molecular mass		pyr	88	Da
+molecular mass		nadp	744	Da
+molecular mass		nadph	745	Da
+molecular mass		nadh	665	Da
+molecular mass		nad	664	Da
+molecular mass		atp	507	Da
+molecular mass		h2o	18	Da
+molecular mass		_2kg	146	Da
+molecular mass		oxa	132	Da
+molecular mass		uql	318	Da
+molecular mass		e4p	200	Da
+molecular mass		uqn	320	Da
+molecular mass		adp	427	Da
+molecular mass		icit	192	Da
+molecular mass		ru5p	230	Da
+molecular mass		xu5p	230	Da
+molecular mass		g6p	260	Da
+molecular mass		bpg	266	Da
+molecular mass		coa	768	Da
+molecular mass		co2	44	Da
+molecular mass		r5p	230	Da
+molecular mass		dhap	170	Da
+molecular mass		glc	180	Da
+molecular mass		fbp	340	Da
+molecular mass		g3p	170	Da
+molecular mass		pep	168	Da
+molecular mass		cit	192	Da
+molecular mass		succoa	868	Da
+molecular mass		_3pg	186	Da
+molecular mass		gluc6p	258	Da
+molecular mass		f6p	260	Da
+molecular mass		_2pg	186	Da
+molecular mass		suc	118	Da
+molecular mass		s7p	290	Da

@@ -1,0 +1,242 @@
+!!!SBtab Document='Model' DocumentName='ECM metabolic state'					
+					
+!!SBtab TableName='Metabolite concentrations' TableID='MetaboliteConcentration' TableType='QuantityMatrix' Unit='mM'					
+!QuantityType	!Compound	data	fixed	initial	emc4cm
+concentration	mal	1.6853424	NaN	0.021876672	0.79541207
+concentration	acecoa	0.606	NaN	8.9125094	0.20844048
+concentration	fum	0.54824225	NaN	7.4545795	0.28437116
+concentration	aco	0.0161	NaN	0.25574817	0.089463641
+concentration	_6pg	0.27853881	NaN	0.0014125375	0.13272855
+concentration	pi	NaN	NaN	8.9846523	8.3162484
+concentration	pyr	1.4051541	NaN	0.0011220185	0.092421243
+concentration	nadp	0.011288198	NaN	8.9125094	0.13754596
+concentration	nadph	0.11389157	NaN	0.0011220185	0.07385911
+concentration	nadh	0.02741513	NaN	0.0010839275	0.0023823172
+concentration	nad	2.1128133	NaN	9.225709	8.3310535
+concentration	atp	3.4491395	NaN	0.0014289131	0.84185894
+concentration	h2o	NaN	NaN	0.0011220185	0.10000041
+concentration	_2kg	0.6369486	NaN	0.0011220185	0.11957643
+concentration	oxa	NaN	NaN	0.0010839275	0.014268509
+concentration	uql	NaN	NaN	8.9125094	0.10237136
+concentration	e4p	0.026636791	NaN	0.0011220185	0.081994949
+concentration	uqn	NaN	NaN	0.0011220185	0.099974151
+concentration	adp	0.60461237	NaN	0.30586337	0.22836998
+concentration	icit	0.008160872	NaN	0.00108668	0.028398385
+concentration	ru5p	0.65875602	NaN	8.9125094	0.19750325
+concentration	xu5p	0.59461428	NaN	7.9432823	0.50297698
+concentration	g6p	0.94916067	NaN	8.1488258	1.2338761
+concentration	bpg	0.050794221	NaN	0.0011130091	0.035750035
+concentration	coa	1.37	NaN	0.0011220185	0.0830334
+concentration	co2	NaN	NaN	5.6234133	0.1007582
+concentration	r5p	0.23022876	NaN	7.9432823	0.30175048
+concentration	dhap	1.3202889	NaN	0.013881648	1.3192776
+concentration	glc	17.363	NaN	8.9125094	0.12309802
+concentration	fbp	1.1609581	NaN	0.0018880865	2.9001327
+concentration	g3p	NaN	NaN	0.001386381	0.12034579
+concentration	pep	0.35315771	NaN	0.0011928252	0.085657009
+concentration	cit	0.7028625	NaN	7.4691817	8.4746077
+concentration	succoa	0.233	NaN	8.9125094	0.14998177
+concentration	_3pg	0.79582005	NaN	0.0072083219	1.9173799
+concentration	gluc6p	NaN	NaN	8.9125094	0.10359715
+concentration	f6p	0.33596722	NaN	0.0011077774	0.10860044
+concentration	_2pg	NaN	NaN	0.0013256291	0.12532364
+concentration	suc	1.1853254	NaN	0.0011220185	0.098003101
+concentration	s7p	NaN	NaN	6.3095734	0.48442038
+					
+!!SBtab TableName='Enzyme concentrations' TableID='EnzymeConcentration' TableType='QuantityMatrix' Unit='mM'					
+!QuantityType	!Reaction	data	emc4cm		
+concentration of enzyme	pts	0.022041994	0.018253829		
+concentration of enzyme	pgi	0.0076401396	0.029807504		
+concentration of enzyme	pfk	0.0039637064	0.033337184		
+concentration of enzyme	fba	0.036878909	0.058321261		
+concentration of enzyme	tpi	0.012351088	0.014153239		
+concentration of enzyme	gap	0.078183154	0.11848779		
+concentration of enzyme	pgk	0.066486318	0.0070954089		
+concentration of enzyme	gpm	0.025035945	0.022108092		
+concentration of enzyme	eno	0.060028482	0.032162912		
+concentration of enzyme	pyk	0.017940462	0.011535209		
+concentration of enzyme	pdh	0.0096560338	0.0054059178		
+concentration of enzyme	zwf	0.002049105	0.0017000096		
+concentration of enzyme	pgl	0.0029922911	0.00088667258		
+concentration of enzyme	gnd	0.023413599	0.0038179886		
+concentration of enzyme	rpi	0.0045797663	0.0013383427		
+concentration of enzyme	rpe	0.0008701224	0.0015793561		
+concentration of enzyme	tkt1	0.007699919	0.01593974		
+concentration of enzyme	tal	0.020051007	0.028618598		
+concentration of enzyme	tkt2	0.007699919	0.011043831		
+concentration of enzyme	fbp	NaN	0		
+concentration of enzyme	gltA	0.016059072	0.007436647		
+concentration of enzyme	acn1	0.0136	0.08137536		
+concentration of enzyme	acn2	0.013601474	0.082043422		
+concentration of enzyme	icd	0.055910345	0.017319526		
+concentration of enzyme	kgd	0.0028328794	0.0018874816		
+concentration of enzyme	suc	0.010316928	0.0057072121		
+concentration of enzyme	sdh	0.0014280635	0.00090153427		
+concentration of enzyme	fum	0.0030969051	0.0034059049		
+concentration of enzyme	mdh	0.088237717	0.0058526508		
+concentration of enzyme	ppc	0.0060327379	0.00028639041		
+					
+!!SBtab TableName='Gibbs free energies of reaction' TableID='ReactionGibbsFreeEnergy' TableType='QuantityMatrix' Unit='kJ/mol'					
+!QuantityType	!Reaction	initial	emc4cm		
+Gibbs energy of reaction	pts	44.50575	38.22973		
+Gibbs energy of reaction	pgi	19.545078	3.4987081		
+Gibbs energy of reaction	pfk	1.4807859	11.196417		
+Gibbs energy of reaction	fba	7.03368	2.8665623		
+Gibbs energy of reaction	tpi	0.21681828	0.44141068		
+Gibbs energy of reaction	gap	6.0600223	6.1279335		
+Gibbs energy of reaction	pgk	27.18282	5.4055191		
+Gibbs energy of reaction	gpm	0.0013125707	2.5657102		
+Gibbs energy of reaction	eno	4.3486387	5.0303168		
+Gibbs energy of reaction	pyk	40.79331	23.916396		
+Gibbs energy of reaction	pdh	14.525989	53.206102		
+Gibbs energy of reaction	zwf	26.033846	11.677475		
+Gibbs energy of reaction	pgl	43.931842	21.627131		
+Gibbs energy of reaction	gnd	2.7782054	12.733849		
+Gibbs energy of reaction	rpi	2.2399523	0.90385729		
+Gibbs energy of reaction	rpe	3.6528382	1.0501352		
+Gibbs energy of reaction	tkt1	25.889956	6.2397087		
+Gibbs energy of reaction	tal	22.592413	5.2891802		
+Gibbs energy of reaction	tkt2	31.514266	12.879944		
+Gibbs energy of reaction	fbp	NaN	NaN		
+Gibbs energy of reaction	gltA	36.379888	22.476668		
+Gibbs energy of reaction	acn1	0.033049221	2.9499134		
+Gibbs energy of reaction	acn2	14.244694	3.5515494		
+Gibbs energy of reaction	icd	29.297568	33.578385		
+Gibbs energy of reaction	kgd	8.0845921	48.219205		
+Gibbs energy of reaction	suc	55.787281	7.1827272		
+Gibbs energy of reaction	sdh	22.229731	19.204876		
+Gibbs energy of reaction	fum	17.891765	0.88675845		
+Gibbs energy of reaction	mdh	0.19983663	0.513397		
+Gibbs energy of reaction	ppc	35.607658	30.034712		
+					
+!!SBtab TableName='Enzyme capacities' TableID='EnzymeCapacity' TableType='QuantityMatrix' Unit='kJ/mol'					
+!QuantityType	!Reaction	!Value			
+enzyme capacity	pts	0.014959477			
+enzyme capacity	pgi	0.010141985			
+enzyme capacity	pfk	0.0011831806			
+enzyme capacity	fba	0.014048607			
+enzyme capacity	tpi	0.00013413722			
+enzyme capacity	gap	0.0074434536			
+enzyme capacity	pgk	0.0027580623			
+enzyme capacity	gpm	0.0017822765			
+enzyme capacity	eno	0.0047613626			
+enzyme capacity	pyk	0.0026010211			
+enzyme capacity	pdh	0.0047873229			
+enzyme capacity	zwf	0.00097256294			
+enzyme capacity	pgl	0.00032594443			
+enzyme capacity	gnd	0.0006571389			
+enzyme capacity	rpi	3.6650741e-05			
+enzyme capacity	rpe	6.1229973e-05			
+enzyme capacity	tkt1	0.0010278624			
+enzyme capacity	tal	0.0068191095			
+enzyme capacity	tkt2	0.0004056271			
+enzyme capacity	fbp	0			
+enzyme capacity	gltA	3.2498818e-05			
+enzyme capacity	acn1	0.044875944			
+enzyme capacity	acn2	0.046404919			
+enzyme capacity	icd	0.00029784265			
+enzyme capacity	kgd	8.0363983e-05			
+enzyme capacity	suc	0.00087546873			
+enzyme capacity	sdh	0.00042714515			
+enzyme capacity	fum	0.00023573575			
+enzyme capacity	mdh	7.4552252e-05			
+enzyme capacity	ppc	9.1319522e-05			
+					
+!!SBtab TableName='Energetic efficiencies' TableID='EnergeticEfficiency' TableType='QuantityMatrix' Unit='kJ/mol'					
+!QuantityType	!Reaction	emc4cm			
+energetic efficiency	pts	0.9999998			
+energetic efficiency	pgi	0.75618927			
+energetic efficiency	pfk	0.98907372			
+energetic efficiency	fba	0.68537011			
+energetic efficiency	tpi	0.16311036			
+energetic efficiency	gap	0.91558251			
+energetic efficiency	pgk	0.88702198			
+energetic efficiency	gpm	0.64477217			
+energetic efficiency	eno	0.86856029			
+energetic efficiency	pyk	0.99993543			
+energetic efficiency	pdh	1			
+energetic efficiency	zwf	0.99100099			
+energetic efficiency	pgl	0.99983741			
+energetic efficiency	gnd	0.9941234			
+energetic efficiency	rpi	0.30553391			
+energetic efficiency	rpe	0.34532725			
+energetic efficiency	tkt1	0.91930433			
+energetic efficiency	tal	0.88159347			
+energetic efficiency	tkt2	0.99445973			
+energetic efficiency	fbp	NaN			
+energetic efficiency	gltA	0.99988459			
+energetic efficiency	acn1	0.69577318			
+energetic efficiency	acn2	0.76133132			
+energetic efficiency	icd	0.99999869			
+energetic efficiency	kgd	1			
+energetic efficiency	suc	0.94483793			
+energetic efficiency	sdh	0.99956803			
+energetic efficiency	fum	0.30072721			
+energetic efficiency	mdh	0.1870633			
+energetic efficiency	ppc	0.99999453			
+					
+!!SBtab TableName='Saturation efficiencies' TableID='SaturationEfficiency' TableType='QuantityMatrix' Unit='kJ/mol'					
+!QuantityType	!Reaction	emc4cm			
+saturation efficiency	pts	0.81952555			
+saturation efficiency	pgi	0.44995271			
+saturation efficiency	pfk	0.035883389			
+saturation efficiency	fba	0.35146427			
+saturation efficiency	tpi	0.058104789			
+saturation efficiency	gap	0.068612524			
+saturation efficiency	pgk	0.43822006			
+saturation efficiency	gpm	0.12503095			
+saturation efficiency	eno	0.17044172			
+saturation efficiency	pyk	0.22549995			
+saturation efficiency	pdh	0.88557079			
+saturation efficiency	zwf	0.57728763			
+saturation efficiency	pgl	0.36766382			
+saturation efficiency	gnd	0.17313396			
+saturation efficiency	rpi	0.089630538			
+saturation efficiency	rpe	0.11226727			
+saturation efficiency	tkt1	0.070144633			
+saturation efficiency	tal	0.27027815			
+saturation efficiency	tkt2	0.03693346			
+saturation efficiency	fbp	NaN			
+saturation efficiency	gltA	0.0043705946			
+saturation efficiency	acn1	0.79259802			
+saturation efficiency	acn2	0.74292771			
+saturation efficiency	icd	0.017196951			
+saturation efficiency	kgd	0.04257736			
+saturation efficiency	suc	0.16235262			
+saturation efficiency	sdh	0.47400277			
+saturation efficiency	fum	0.23015489			
+saturation efficiency	mdh	0.068095681			
+saturation efficiency	ppc	0.31886551			
+					
+!!SBtab TableName='Metabolic fluxes' TableID='MetabolicFlux' TableType='QuantityMatrix' Unit='mM/s'					
+!QuantityType	!Reaction	data			
+rate of reaction	pts	0.5691			
+rate of reaction	pgi	0.385			
+rate of reaction	pfk	0.4417			
+rate of reaction	fba	0.44702			
+rate of reaction	tpi	0.4445			
+rate of reaction	gap	0.9163			
+rate of reaction	pgk	0.8946			
+rate of reaction	gpm	0.8729			
+rate of reaction	eno	0.91875			
+rate of reaction	pyk	0.1841			
+rate of reaction	pdh	0.3787			
+rate of reaction	zwf	0.1813			
+rate of reaction	pgl	0.1568			
+rate of reaction	gnd	0.1323			
+rate of reaction	rpi	0.049933333			
+rate of reaction	rpe	0.077233333			
+rate of reaction	tkt1	0.0448			
+rate of reaction	tal	0.0448			
+rate of reaction	tkt2	0.0273			
+rate of reaction	fbp	0			
+rate of reaction	gltA	0.154			
+rate of reaction	acn1	0.154			
+rate of reaction	acn2	0.154			
+rate of reaction	icd	0.154			
+rate of reaction	kgd	0.0924			
+rate of reaction	suc	0.1673			
+rate of reaction	sdh	0.0924			
+rate of reaction	fum	0.0924			
+rate of reaction	mdh	0.0602			
+rate of reaction	ppc	-0.2114			

@@ -1,12 +1,12 @@
-SBtab modeling toolkit schema file
-==========================================
+SBtab modeling toolkit schema files
+===================================
 
 ObjTables schema file for SBtab subformat "sbtab-toolkit"
 
-o sbtab-toolkit_objtables-schema.tsv    ObjTables schema file for sbtab-toolkit
+Original SBtab schema
+* SBtab_schema.objtables.tsv            Original schema file "SBtab.tsv" (from www.objtables.org)
+* ecoli_noor_2016_ecm_pre.objtables.tsv Example data file
 
-o ecoli_noor_2016_ecm_ObjTables.tsv     Example data file for sbtab-toolkit
-
-o SBtab.tsv                             Original ObjTables schema file for SBtab
-
-o ecoli_noor_2016_ecm_ObjTables_pre.tsv Example data file for testing ObjTables SBtab schema
+SBtab toolkit schema
+* sbtab-toolkit_schema.objtables.tsv    ObjTables schema file for sbtab-toolkit
+* ecoli_noor_2016_ecm.objtables.tsv     Example data file
