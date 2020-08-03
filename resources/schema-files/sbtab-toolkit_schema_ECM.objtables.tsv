@@ -272,3 +272,16 @@ Parameter	Class	Quantity		TableType Parameter
 Flux	Class	Quantity		TableType Flux
 ConcentrationConstraint	Class	Quantity		TableType ConcentrationConstraint
 EnzymeCostWeight	Class	Quantity		TableType EnzymeCostWeight
+
+QuantityMatrix	Class		row	TableType QuantityMatrix
+QuantityType	Attribute	QuantityMatrix	String
+Unit	Attribute	QuantityMatrix	String
+Reaction	Attribute	QuantityMatrix	String
+Compound	Attribute	QuantityMatrix	String
+Value	Attribute	QuantityMatrix	String
+
+QuantityMatrixECM	Class	QuantityMatrix	row	TableType QuantityMatrix, adapted for ECM output columns
+data	Attribute	QuantityMatrixECM	String
+fixed	Attribute	QuantityMatrixECM	String
+initial	Attribute	QuantityMatrixECM	String
+emc4cm	Attribute	QuantityMatrixECM	String

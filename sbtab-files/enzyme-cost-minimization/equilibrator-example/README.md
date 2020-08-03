@@ -1,1 +1,0 @@
-Example files from https://gitlab.com/equilibrator/equilibrator-pathway
