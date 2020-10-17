@@ -1,0 +1,213 @@
+-------------------------------------
+Table type "SBtab-toolkit" - overview
+-------------------------------------
+
+DocumentType="SBtab-toolkit"
+
+--------------------------
+Current format used in ECM
+--------------------------
+
+Typically in model file  (e.g. 'FILENAME_ModelData')
+
+!!Config
+!!Reaction
+!!Compound
+!!Thermodynamics
+!!Parameter
+!!Flux
+!!GibbsEnergyOfReaction
+!!ConcentrationConstraint (should be renamed into !!MetaboliteRange)
+!!EnzymeCostWeight
+
+(note that tables with incomplete / inconsistent data should be called !!ThermodynamicsData and !!ParameterData)
+(also note that !!Parameter / !!ParameterData should be renamed into !!Kinetics / !!KineticsData, and !!Parameter / !!ParameterData should be used for combined thermodynamic+kinetic data tables)
+
+Typically in experimental data file  (e.g. 'FILENAME_ValidationData')
+
+!!ConcentrationData (should be renamed into !!MetaboliteData)
+!!EnzymeData
+
+------------------------------------------
+Current format used in Parameter Balancing
+------------------------------------------
+
+Typically in modeldata file (includes options and prior)
+
+!!PbConfig
+!!Compartment
+!!Compound
+!!Reaction
+!!QuantityInfo (contains prior table; should be renamed, also in spec; maybe "QuantityProperties"?)
+
+Typically in experimental data file:
+
+!!Quantity (should be renamed into "!!ParameterData", and split into "!!ThermodynamicsData" and  "!!KineticsData")
+
+Typically in result file:
+!!QuantityData (should be renamed into "!!Parameter", and split into "!!Thermodynamics" and  "!!Kinetics")
+
+
+-------------------------------------
+Table types (ECM)
+-------------------------------------
+
+TableID='Config' TableType='Config'
+!Option
+!Value
+!Comment                
+
+TableID='Reaction' TableType='Reaction'
+!ID
+!ReactionFormula
+!Identifiers:kegg.reaction
+!IsReversible
+!Gene
+!NameForPlots
+
+TableID='Compound' TableType='Compound'
+!ID
+!Name
+!Identifiers:kegg.compound
+!IsConstant
+!NameForPlots
+
+TableID='Thermodynamics' TableType='Quantity' StandardConcentration='M'				
+!QuantityType
+!Reaction
+!Compound
+!Value
+!Unit
+
+TableID='Parameter' TableType='Quantity'
+!QuantityType
+!Reaction
+!Compound
+!Value
+!Unit
+!Reaction:Identifiers:kegg.reaction
+!Compound:Identifiers:kegg.compound
+!ID
+
+TableID='Layout' TableType='Position'
+!Element
+!PositionX
+!PositionY					
+
+TableID='Flux' TableType='Quantity' Unit='mM/s'
+!QuantityType
+!Reaction
+!Reaction:Identifiers:kegg.reaction
+!Value
+
+TableID='GibbsEnergyOfReaction' TableType='Quantity' Unit='kJ/mol'
+!QuantityType
+!Reaction
+!Reaction:Identifiers:kegg.reaction
+!Value
+!OriginalValue
+!ReactionFormula
+
+TableID='ConcentrationConstraint' TableType='Quantity' Unit='mM'
+!QuantityType
+!Compound
+!Compound:Identifiers:kegg.compound
+!Concentration:Min
+!Concentration:Max
+
+TableID='EnzymeCostWeight' TableType='Quantity' Unit='ArbitraryUnits'
+!QuantityType
+!Reaction
+!Reaction:Identifiers:kegg.reaction
+!Value
+
+TableID='ConcentrationData' TableType='Quantity' Unit='mM'
+!QuantityType
+!Compound
+!Compound:Identifiers:kegg.compound
+!Value
+
+TableID='EnzymeData' TableType='Quantity' Unit='mM'
+!QuantityType
+!Reaction
+!Reaction:Identifiers:kegg.reaction
+!Value
+
+
+-----------------------------------------------------
+Table types (Parameter Balancing)
+-----------------------------------------------------
+
+(from model file:)
+
+TableID='PbConfig'      TableType='PbConfig' 
+!Option
+!Value
+
+TableID='Compartment'   TableType='Compartment' 
+!ID
+!Size
+
+TableID='Compound'      TableType='Compound' 
+!ID
+!Name
+!Location
+!Charge
+!IsConstant
+!InitialConcentration
+!hasOnlySubstanceUnits
+!Identifiers:kegg.compound
+
+TableID='Reaction'      TableType='Reaction' 
+!ID
+!Name
+!ReactionFormula
+!Regulator
+!KineticLaw
+!IsReversible
+!Identifiers:ec-code								
+
+TableID='QuantityInfo'  TableType='QuantityInfo' 
+!QuantityType
+!Symbol
+!Unit
+!Constant
+!RelatedElement
+!Scaling
+!Dependence
+!PriorMedian
+!PriorStd
+!LowerBound
+!UpperBound
+!ErrorStd
+!SBMLElement
+!Abbreviation
+!MatrixInfo
+
+(from input data file:)
+
+!!Quantity
+!QuantityType
+!Reaction:SBML:reaction:id
+!Compound:SBML:species:id
+!Mean
+!Std
+!Unit
+!Organism
+!Reaction:Identifiers:kegg.reaction
+!Compound:Identifiers:kegg.compound
+!Reference
+
+(from output file:)
+
+TableID="QuantityData" TableType="QuantityData" 
+!QuantityType
+!SBML:reaction:id
+!SBML:species:id
+!Mode
+!Value
+!Std
+!Unit
+!Provenance
+!Type
+!Source
