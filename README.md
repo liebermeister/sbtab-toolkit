@@ -1,5 +1,5 @@
-SBtab modelling toolkit
-=======================
+SBtab toolkit
+=============
 
 SBtab example and schema files for the SBtab modelling toolkit (currently under development).
 
