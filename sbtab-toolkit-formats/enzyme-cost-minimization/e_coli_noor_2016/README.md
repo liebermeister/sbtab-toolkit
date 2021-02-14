@@ -35,7 +35,7 @@ Options file (all options, written after ECM)
 
 Result file demo_ecm_e_coli_noor_2016_ModelState.tsv
 
-!!TableID='Reaction' TableType='Reaction'
+!!TableID='Reaction' TableType='Reaction'  
 !ID
 !ReactionFormula
 !Name
@@ -43,7 +43,7 @@ Result file demo_ecm_e_coli_noor_2016_ModelState.tsv
 !IsReversible
 !Gene
 
-!!TableID='Compound' TableType='Compound'
+!!TableID='Compound' TableType='Compound'  
 !ID
 !Name
 !NameForPlots
@@ -51,44 +51,44 @@ Result file demo_ecm_e_coli_noor_2016_ModelState.tsv
 !IsConstant
 !InitialConcentration
 
-!!TableID='Position' TableType='Position'
+!!TableID='Position' TableType='Position'  
 !Element
 !PositionX
 !PositionY			
 
-!!TableID='Parameter' TableType='Quantity'
+!!TableID='Parameter' TableType='Quantity'  
 !QuantityType
 !Reaction
 !Compound
 !Mode
 !Unit	
 
-!!TableID='MetaboliteConcentration' TableType='Quantity'
+!!TableID='MetaboliteConcentration' TableType='Quantity'  
 !QuantityType
 !Metabolite
 !Value
 
 Result file demo_ecm_e_coli_noor_2016_StateRuns.tsv  
 
-!!TableID='MetabolicFlux' TableType='QuantityMatrix' Unit='mM/s'					
+!!TableID='MetabolicFlux' TableType='QuantityMatrix'  
 !QuantityType	!Reaction	data			
 
-!!TableID='MetaboliteConcentration' TableType='QuantityMatrix'
+!!TableID='MetaboliteConcentration' TableType='QuantityMatrix'  
 !QuantityType	!Compound	data	fixed	initial	emc4cm
 
-!!TableID='EnzymeConcentration' TableType='QuantityMatrix'
+!!TableID='EnzymeConcentration' TableType='QuantityMatrix'  
 !QuantityType	!Reaction	data	emc4cm		
 
-!!TableID='ReactionGibbsFreeEnergy' TableType='QuantityMatrix'
+!!TableID='ReactionGibbsFreeEnergy' TableType='QuantityMatrix'  
 !QuantityType	!Reaction	initial	emc4cm		
 
-!!TableID='EnzymeCapacity' TableType='QuantityMatrix'
+!!TableID='EnzymeCapacity' TableType='QuantityMatrix'  
 !QuantityType	!Reaction	!Value			
 
-!!TableID='EnergeticEfficiency' TableType='QuantityMatrix' Unit='dimensionless'					
+!!TableID='EnergeticEfficiency' TableType='QuantityMatrix'  
 !QuantityType	!Reaction	emc4cm			
 
-!!TableID='SaturationEfficiency' TableType='QuantityMatrix' Unit='dimensionless'					
+!!TableID='SaturationEfficiency' TableType='QuantityMatrix'  
 !QuantityType	!Reaction	emc4cm			
 
 
