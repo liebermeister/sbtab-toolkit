@@ -44,7 +44,7 @@ Typically in result file:
 Details on table types (Parameter Balancing)
 -----------------------------------------------------
 
-## In model file
+### In model file
 
 TableID='PbConfig' TableType='PbConfig'  
 !Option  
@@ -90,7 +90,7 @@ TableID='QuantityInfo'  TableType='QuantityInfo'
 !Abbreviation  
 !MatrixInfo
 
-## In input data file
+### In input data file
 
 !!Quantity  
 !QuantityType  
@@ -104,7 +104,7 @@ TableID='QuantityInfo'  TableType='QuantityInfo'
 !Compound:Identifiers:kegg.compound  
 !Reference
 
-## In output file
+### In output file
 
 TableID="QuantityData" TableType="QuantityData"  
 !QuantityType  
