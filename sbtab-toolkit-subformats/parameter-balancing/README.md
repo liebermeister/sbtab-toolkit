@@ -24,30 +24,36 @@ are copies from the Parameter Balancing github repo (directory standalone_versio
 Format used in Parameter Balancing
 ----------------------------------
 
-Typically in modeldata file (includes options and prior)
+Options file
+!!ConfigurePB
 
-!!ConfigurePB  TableID='ConfigurePB'  TableType='Config'      
-!!Compartment  TableID='Compartment'  TableType='Compartment'  
-!!Compound     TableID='Compound'     TableType='Compound'    
-!!Reaction     TableID='Reaction'     TableType='Reaction'    
-!!PriorTable   TableID='PriorTable' TableType='QuantityInfo'
+Model file
+!!ConfigurePB  
+!!Compartment  
+!!Compound  
+!!Reaction
 
-Typically in experimental data file:  
-!!ParameterData   TableID='ParameterData' TableType='Quantity'
+Prior table file
+!!PriorTable
 
-Typically in result file:  
-!!Parameter   TableID='Parameter' TableType='Quantity'
+Experimental data file:  
+!!ParameterData
+
+Result file:  
+!!Parameter
 
 
 ----------------------
 Details on table types
 ----------------------
 
-### In model file
+### In options file
 
 TableID='ConfigurePB' TableType='Config'  
 !Option  
 !Value
+
+### In model file
 
 TableID='Compartment'   TableType='Compartment'  
 !ID  
@@ -71,6 +77,8 @@ TableID='Reaction'      TableType='Reaction'
 !KineticLaw  
 !IsReversible  
 !Identifiers:ec-code								
+
+### In prior table file
 
 TableID='PriorTable'  TableType='QuantityInfo'  
 !QuantityType  
