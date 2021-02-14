@@ -16,20 +16,27 @@ Output
 
 ### File formats
 
-Options file  
-!!ConfigureECM
-
-Model file  
-!!Reaction
-!!Compound
-!!Parameter
-!!Layout
-!!Flux
-!!ConcentrationConstraint
+Model file e_coli_noor_2016_ECM_Model.tsv 
+!!Reaction  
+!!Compound  
+!!Parameter  
+!!Layout  
+!!Flux  
+!!ConcentrationConstraint  
 !!EnzymeCostWeight
 
-!!ConcentrationData
-!!EnzymeData
+Validation data file e_coli_noor_2016_ECM_ValidationData.tsv  
+!!FluxData
+!!MetaboliteConcentrationData
+!!EnzymeConcentrationData
+
+Options file (all options, written after ECM)  
+!!ConfigureECM
+
+Result file demo_ecm_e_coli_noor_2016_ModelState.tsv
+
+Result file demo_ecm_e_coli_noor_2016_StateRuns.tsv  
+
 
 -------------------------------------
 Details on table types (ECM)

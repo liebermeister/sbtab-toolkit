@@ -32,14 +32,14 @@ Kinetic data file:
 !!ParameterData  
 
 State data file:  
-!!MetabolicFluxData  
+!!FluxData  
 !!MetaboliteConcentrationData  
 !!EnzymeConcentrationData
 
 Note that the model and data file in this example contains only one metabolic state!
 
 State data and result file:  
-!!MetabolicFlux  
+!!Flux  
 !!MetaboliteConcentration  
 !!EnzymeConcentration
 
@@ -83,7 +83,7 @@ Kinetic data file
 
 State data file
 
-!!TableID='MetabolicFluxData' TableType='Quantity'  
+!!TableID='FluxData' TableType='Quantity'  
 !QuantityType  
 !Reaction  
 !Reaction:Identifiers:kegg.reaction  
@@ -106,7 +106,7 @@ State data file
 
 ### In result file (note that data are in uncontrolled columns!)
 
-!!TableID='MetabolicFlux' TableType='QuantityMatrix'
+!!TableID='Flux' TableType='QuantityMatrix'
 !QuantityType
 !Reaction
 Sample1_Mean
