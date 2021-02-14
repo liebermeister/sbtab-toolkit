@@ -54,71 +54,25 @@ Details on table types
 ### Model file
 
 !!TableID='Compartment'   TableType='Compartment'  
-!ID  
-!Size
+!ID | !Size
 
 !!TableID='Compound'      TableType='Compound'   
-!ID  
-!Name  
-!Location  
-!Charge  
-!IsConstant  
-!InitialConcentration  
-!hasOnlySubstanceUnits  
-!Identifiers:kegg.compound
+!ID | !Name | !Location | !Charge | !IsConstant | !InitialConcentration | !hasOnlySubstanceUnits | !Identifiers:kegg.compound
 
 !!TableID='Reaction'      TableType='Reaction'  
-!ID  
-!Name  
-!ReactionFormula  
-!Regulator  
-!KineticLaw  
-!IsReversible  
-!Identifiers:ec-code								
+!ID | !Name | !ReactionFormula | !Regulator | !KineticLaw | !IsReversible | !Identifiers:ec-code								
 
 ### Prior table file
 
 !!TableID='PriorTable'  TableType='QuantityInfo'  
-!QuantityType  
-!Symbol  
-!Unit  
-!Constant  
-!RelatedElement  
-!Scaling  
-!Dependence  
-!PriorMedian  
-!PriorStd  
-!LowerBound  
-!UpperBound  
-!ErrorStd  
-!SBMLElement  
-!Abbreviation  
-!MatrixInfo
+!QuantityType | !Symbol | !Unit | !Constant | !RelatedElement | !Scaling | !Dependence | !PriorMedian | !PriorStd | !LowerBound | !UpperBound | !ErrorStd | !SBMLElement | !Abbreviation | !MatrixInfo
 
 ### Input data file
 
 !!TableID='ParameterData'  TableType='Quantity'  
-!QuantityType  
-!Reaction:SBML:reaction:id  
-!Compound:SBML:species:id  
-!Mean  
-!Std  
-!Unit  
-!Organism  
-!Reaction:Identifiers:kegg.reaction  
-!Compound:Identifiers:kegg.compound  
-!Reference
+!QuantityType | !Reaction:SBML:reaction:id | !Compound:SBML:species:id | !Mean | !Std | !Unit | !Organism | !Reaction:Identifiers:kegg.reaction | !Compound:Identifiers:kegg.compound | !Reference
 
 ### Output data file
 
 !!TableID="ParameterBalanced" TableType="Quantity"  
-!QuantityType  
-!SBML:reaction:id  
-!SBML:species:id  
-!Mode  
-!Value  
-!Std  
-!Unit  
-!Provenance  
-!Type  
-!Source
+!QuantityType | !SBML:reaction:id | !SBML:species:id | !Mode | !Value | !Std | !Unit | !Provenance | !Type | !Source
