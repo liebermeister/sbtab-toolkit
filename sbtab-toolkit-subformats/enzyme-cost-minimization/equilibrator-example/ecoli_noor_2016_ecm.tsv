@@ -1,5 +1,5 @@
 !!!SBtab DocumentName='E. coli central carbon metabolism - balanced parameters' SBtabVersion='1.0'				
-!!SBtab TableID='Configuration' TableType='Configuration'				
+!!SBtab TableID='Configuration' TableType='Options'				
 !ID	!Value	!Comment		
 algorithm	ECM	ECM, or MDF		
 version	3	1-4 (for ECM1 - ECM4)		
