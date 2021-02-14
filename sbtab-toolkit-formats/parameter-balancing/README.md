@@ -49,17 +49,17 @@ Details on table types
 
 ### In options file
 
-TableID='ConfigurePB' TableType='Config'  
+!!TableID='ConfigurePB' TableType='Config'  
 !Option  
 !Value
 
 ### In model file
 
-TableID='Compartment'   TableType='Compartment'  
+!!TableID='Compartment'   TableType='Compartment'  
 !ID  
 !Size
 
-TableID='Compound'      TableType='Compound'   
+!!TableID='Compound'      TableType='Compound'   
 !ID  
 !Name  
 !Location  
@@ -69,7 +69,7 @@ TableID='Compound'      TableType='Compound'
 !hasOnlySubstanceUnits  
 !Identifiers:kegg.compound
 
-TableID='Reaction'      TableType='Reaction'  
+!!TableID='Reaction'      TableType='Reaction'  
 !ID  
 !Name  
 !ReactionFormula  
@@ -80,7 +80,7 @@ TableID='Reaction'      TableType='Reaction'
 
 ### In prior table file
 
-TableID='PriorTable'  TableType='QuantityInfo'  
+!!TableID='PriorTable'  TableType='QuantityInfo'  
 !QuantityType  
 !Symbol  
 !Unit  
@@ -99,7 +99,7 @@ TableID='PriorTable'  TableType='QuantityInfo'
 
 ### In input data file
 
-TableID='ParameterData'  TableType='Quantity'  
+!!TableID='ParameterData'  TableType='Quantity'  
 !QuantityType  
 !Reaction:SBML:reaction:id  
 !Compound:SBML:species:id  
@@ -113,7 +113,7 @@ TableID='ParameterData'  TableType='Quantity'
 
 ### In output file
 
-TableID="Parameter" TableType="Quantity"  
+!!TableID="Parameter" TableType="Quantity"  
 !QuantityType  
 !SBML:reaction:id  
 !SBML:species:id  

@@ -1,17 +1,22 @@
 SBtab files used in Structural Thermokinetic Modelling
 ======================================================
 
-ecoli_ccm model (modified version of model from noor 2016)
+Example model: ecoli_ccm model (modified version of model from Noor 2016)
 
 Files 
 -----
 
-ecoli_ccm_es_model.tsv 
+### Model file ecoli_ccm_es_model.tsv 
 
 !!Reaction  
 !!Compound  
 !!Position  
 !!Parameter
+
+Notes:
+* The table Parameter is not used for STM itself, just (potentially) for validation
+* The table Parameter in this example also contains entries for (metabolite) concentration, concentration of enzyme, molecular mass, and protein molecular mass
+* Currently, only the reference state (and the previously known model parameters) are stored as SBtab.
 
 Format used in Structural thermokinetic modelling
 ----------------------------------

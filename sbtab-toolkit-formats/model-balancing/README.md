@@ -1,6 +1,8 @@
 SBtab files used in model balancing
 =======================================
 
+Example model: double_branch_model_artificial
+
 Files 
 -----
 
@@ -49,20 +51,20 @@ Details on table types
 
 ### In options file
 
-!!ConfigureModelBalancing TableID='ConfigureModelBalancing' TableType='Config'
+!!TableID='ConfigureModelBalancing' TableType='Config'
 !Option  
 !Value
 
 ### In model and data file 
 
-!!Reaction TableID='Reaction' TableType='Reaction'  
+!!TableID='Reaction' TableType='Reaction'  
 !ID  
 !ReactionFormula  
 !Name  
 !Identifiers:kegg.reaction  
 !IsReversible
 
-!!Compound TableID='Compound' TableType='Compound'  
+!!TableID='Compound' TableType='Compound'  
 !ID  
 !Name  
 !Identifiers:kegg.compound  
@@ -70,7 +72,7 @@ Details on table types
 
 Kinetic data file
 
-!!Parameter TableID='Parameter' TableType='Quantity'   
+!!TableID='Parameter' TableType='Quantity'   
 !QuantityType  
 !Reaction  
 !Compound  
@@ -81,21 +83,21 @@ Kinetic data file
 
 State data file
 
-!!MetabolicFluxData TableID='MetabolicFluxData' TableType='Quantity'  
+!!TableID='MetabolicFluxData' TableType='Quantity'  
 !QuantityType  
 !Reaction  
 !Reaction:Identifiers:kegg.reaction  
 !Mean  
 !Std
 
-!!MetaboliteConcentrationData TableID='MetaboliteConcentrationData' TableType='Quantity'  
+!!TableID='MetaboliteConcentrationData' TableType='Quantity'  
 !QuantityType  
 !Compound  
 !Compound:Identifiers:kegg.compound  
 !Mean  
 !Std
 
-!!EnzymeConcentrationData TableID='EnzymeConcentrationData' TableType='Quantity'  
+!!TableID='EnzymeConcentrationData' TableType='Quantity'  
 !QuantityType  
 !Reaction  
 !Reaction:Identifiers:kegg.reaction  
@@ -104,21 +106,21 @@ State data file
 
 ### In result file (note that data are in uncontrolled columns!)
 
-!!MetabolicFlux TableID='MetabolicFlux' TableType='QuantityMatrix'
+!!TableID='MetabolicFlux' TableType='QuantityMatrix'
 !QuantityType
 !Reaction
 Sample1_Mean
 Sample1_Std
 ..
 
-!!MetaboliteConcentration TableID='MetaboliteConcentration' TableType='QuantityMatrix'
+!!TableID='MetaboliteConcentration' TableType='QuantityMatrix'
 !QuantityType
 !Compound
 Sample1_Mean
 Sample1_Std
 ..
 
-!!EnzymeConcentration TableID='EnzymeConcentration' TableType='QuantityMatrix'
+!!TableID='EnzymeConcentration' TableType='QuantityMatrix'
 !QuantityType
 !Reaction
 Sample1_Mean
