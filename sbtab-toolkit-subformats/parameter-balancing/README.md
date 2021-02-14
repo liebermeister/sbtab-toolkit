@@ -1,6 +1,9 @@
 SBtab files used in parameter balancing
 =======================================
 
+Files
+----------------------------------
+
 The configuration files
 
 * definitions.tsv (= SBtab-parameter-balancing schema file)
@@ -18,7 +21,6 @@ The model files
 are copies from the Parameter Balancing github repo (directory standalone_version/files/example_files/teusink)
 
 
-----------------------------------
 Format used in Parameter Balancing
 ----------------------------------
 
@@ -39,9 +41,9 @@ Typically in result file:
 !!QuantityData (should be renamed into "!!Parameter", and split into "!!Thermodynamics" and  "!!Kinetics")
 
 
------------------------------------------------------
-Details on table types (Parameter Balancing)
------------------------------------------------------
+----------------------
+Details on table types
+----------------------
 
 ### In model file
 
