@@ -2,7 +2,7 @@ SBtab files used in model balancing
 =======================================
 
 Files 
-----------------------------------
+-----
 
 Model double_branch_model_artificial (file provenance see below)
 
@@ -37,8 +37,8 @@ State data file:
 Note that the model and data file in this example contains only one metabolic state!
 
 State data and result file:  
-!!MetabolicFlux
-!!MetaboliteConcentration
+!!MetabolicFlux  
+!!MetaboliteConcentration  
 !!EnzymeConcentration
 
 Note that the state data and result files in this example contain several metabolic states!
