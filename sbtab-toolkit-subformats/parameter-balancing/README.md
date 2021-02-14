@@ -24,14 +24,13 @@ Format used in Parameter Balancing
 
 Typically in modeldata file (includes options and prior)
 
-!!PbConfig     TableType='Config'  
-!!Compartment  TableType='Compartment'  
-!!Compound     TableType='Compound'  
-!!Reaction     TableType='Reaction'  
-!!QuantityInfo TableType='QuantityInfo'
+!!PbConfig     TableID='Config'       TableType='Config'      
+!!Compartment  TableID='Compartment'  TableType='Compartment'  
+!!Compound     TableID='Compound'     TableType='Compound'    
+!!Reaction     TableID='Reaction'     TableType='Reaction'    
+!!QuantityInfo TableID='QuantityInfo' TableType='QuantityInfo'
 
-Note:  
-QuantityInfo (contains prior table; should be renamed, also in spec; maybe "QuantityProperties"?)
+Note: QuantityInfo (contains prior table; should be renamed, also in spec; maybe "QuantityProperties"?)
 
 Typically in experimental data file:  
 !!Quantity (should be renamed into "!!ParameterData", and split into "!!ThermodynamicsData" and  "!!KineticsData")
@@ -92,7 +91,7 @@ TableID='QuantityInfo'  TableType='QuantityInfo'
 
 ### In input data file
 
-!!Quantity  
+TableID='Quantity'  TableType='Quantity'  
 !QuantityType  
 !Reaction:SBML:reaction:id  
 !Compound:SBML:species:id  
