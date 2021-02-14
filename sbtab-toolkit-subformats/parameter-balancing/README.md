@@ -46,74 +46,74 @@ Details on table types (Parameter Balancing)
 
 (from model file:)
 
-TableID='PbConfig'      TableType='PbConfig' 
-!Option
+TableID='PbConfig' TableType='PbConfig'  
+!Option  
 !Value
 
-TableID='Compartment'   TableType='Compartment' 
-!ID
+TableID='Compartment'   TableType='Compartment'  
+!ID  
 !Size
 
-TableID='Compound'      TableType='Compound' 
-!ID
-!Name
-!Location
-!Charge
-!IsConstant
-!InitialConcentration
-!hasOnlySubstanceUnits
+TableID='Compound'      TableType='Compound'   
+!ID  
+!Name  
+!Location  
+!Charge  
+!IsConstant  
+!InitialConcentration  
+!hasOnlySubstanceUnits  
 !Identifiers:kegg.compound
 
-TableID='Reaction'      TableType='Reaction' 
-!ID
-!Name
-!ReactionFormula
-!Regulator
-!KineticLaw
-!IsReversible
+TableID='Reaction'      TableType='Reaction'  
+!ID  
+!Name  
+!ReactionFormula  
+!Regulator  
+!KineticLaw  
+!IsReversible  
 !Identifiers:ec-code								
 
-TableID='QuantityInfo'  TableType='QuantityInfo' 
-!QuantityType
-!Symbol
-!Unit
-!Constant
-!RelatedElement
-!Scaling
-!Dependence
-!PriorMedian
-!PriorStd
-!LowerBound
-!UpperBound
-!ErrorStd
-!SBMLElement
-!Abbreviation
+TableID='QuantityInfo'  TableType='QuantityInfo'  
+!QuantityType  
+!Symbol  
+!Unit  
+!Constant  
+!RelatedElement  
+!Scaling  
+!Dependence  
+!PriorMedian  
+!PriorStd  
+!LowerBound  
+!UpperBound  
+!ErrorStd  
+!SBMLElement  
+!Abbreviation  
 !MatrixInfo
 
 (from input data file:)
 
-!!Quantity
-!QuantityType
-!Reaction:SBML:reaction:id
-!Compound:SBML:species:id
-!Mean
-!Std
-!Unit
-!Organism
-!Reaction:Identifiers:kegg.reaction
-!Compound:Identifiers:kegg.compound
+!!Quantity  
+!QuantityType  
+!Reaction:SBML:reaction:id  
+!Compound:SBML:species:id  
+!Mean  
+!Std  
+!Unit  
+!Organism  
+!Reaction:Identifiers:kegg.reaction  
+!Compound:Identifiers:kegg.compound  
 !Reference
 
 (from output file:)
 
-TableID="QuantityData" TableType="QuantityData" 
-!QuantityType
-!SBML:reaction:id
-!SBML:species:id
-!Mode
-!Value
-!Std
-!Unit
-!Provenance
-!Type
+TableID="QuantityData" TableType="QuantityData"  
+!QuantityType  
+!SBML:reaction:id  
+!SBML:species:id  
+!Mode  
+!Value  
+!Std  
+!Unit  
+!Provenance  
+!Type  
 !Source
