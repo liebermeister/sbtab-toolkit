@@ -26,16 +26,13 @@ Model file:
 !!Compound  
 !!Parameter  
 
-Kinetic data file
+Kinetic data file:  
 !!ParameterData  
 
-State data file  
-!!TableID='MetabolicFluxData' TableType='QuantityMatrix'
-!QuantityType	!Reaction
-!!TableID='MetaboliteConcentrationData' TableType='QuantityMatrix'  
-!QuantityType	!Compound
-!!TableID='EnzymeConcentrationData' TableType='QuantityMatrix'
-!QuantityType	!Reaction
+State data file:  
+!!MetabolicFluxData  
+!!MetaboliteConcentrationData  
+!!EnzymeConcentrationData
 
 Note that the model and data file in this example contains only one metabolic state!
 
