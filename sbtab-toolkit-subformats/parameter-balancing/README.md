@@ -12,7 +12,7 @@ The configuration files
 
 are copies from the Parameter Balancing github repository (directory standalone_version/files/default_files)
 
-The model files
+The example files
 
 * teusink/teusink_data.tsv
 * teusink/teusink_modeldata.tsv
@@ -26,19 +26,17 @@ Format used in Parameter Balancing
 
 Typically in modeldata file (includes options and prior)
 
-!!PbConfig     TableID='Config'       TableType='Config'      
+!!ConfigurePB  TableID='ConfigurePB'  TableType='Config'      
 !!Compartment  TableID='Compartment'  TableType='Compartment'  
 !!Compound     TableID='Compound'     TableType='Compound'    
 !!Reaction     TableID='Reaction'     TableType='Reaction'    
-!!QuantityInfo TableID='QuantityInfo' TableType='QuantityInfo'
-
-Note: QuantityInfo (contains prior table; should be renamed, also in spec; maybe "QuantityProperties"?)
+!!PriorTable   TableID='PriorTable' TableType='QuantityInfo'
 
 Typically in experimental data file:  
-!!Quantity (should be renamed into "!!ParameterData", and split into "!!ThermodynamicsData" and  "!!KineticsData")
+!!ParameterData   TableID='ParameterData' TableType='Quantity'
 
 Typically in result file:  
-!!QuantityData (should be renamed into "!!Parameter", and split into "!!Thermodynamics" and  "!!Kinetics")
+!!Parameter   TableID='Parameter' TableType='Quantity'
 
 
 ----------------------
@@ -47,7 +45,7 @@ Details on table types
 
 ### In model file
 
-TableID='PbConfig' TableType='PbConfig'  
+TableID='ConfigurePB' TableType='Config'  
 !Option  
 !Value
 
@@ -74,7 +72,7 @@ TableID='Reaction'      TableType='Reaction'
 !IsReversible  
 !Identifiers:ec-code								
 
-TableID='QuantityInfo'  TableType='QuantityInfo'  
+TableID='PriorTable'  TableType='QuantityInfo'  
 !QuantityType  
 !Symbol  
 !Unit  
@@ -93,7 +91,7 @@ TableID='QuantityInfo'  TableType='QuantityInfo'
 
 ### In input data file
 
-TableID='Quantity'  TableType='Quantity'  
+TableID='ParameterData'  TableType='Quantity'  
 !QuantityType  
 !Reaction:SBML:reaction:id  
 !Compound:SBML:species:id  
@@ -107,7 +105,7 @@ TableID='Quantity'  TableType='Quantity'
 
 ### In output file
 
-TableID="QuantityData" TableType="QuantityData"  
+TableID="Parameter" TableType="Quantity"  
 !QuantityType  
 !SBML:reaction:id  
 !SBML:species:id  
