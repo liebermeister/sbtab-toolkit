@@ -47,13 +47,13 @@ Result file:
 Details on table types
 ----------------------
 
-### In options file
+### Options file
 
 !!TableID='ConfigurePB' TableType='Config'  
 !Option  
 !Value
 
-### In model file
+### Model file
 
 !!TableID='Compartment'   TableType='Compartment'  
 !ID  
@@ -78,7 +78,7 @@ Details on table types
 !IsReversible  
 !Identifiers:ec-code								
 
-### In prior table file
+### Prior table file
 
 !!TableID='PriorTable'  TableType='QuantityInfo'  
 !QuantityType  
@@ -97,7 +97,7 @@ Details on table types
 !Abbreviation  
 !MatrixInfo
 
-### In input data file
+### Input data file
 
 !!TableID='ParameterData'  TableType='Quantity'  
 !QuantityType  
@@ -111,7 +111,7 @@ Details on table types
 !Compound:Identifiers:kegg.compound  
 !Reference
 
-### In output file
+### Output data file
 
 !!TableID="Parameter" TableType="Quantity"  
 !QuantityType  
