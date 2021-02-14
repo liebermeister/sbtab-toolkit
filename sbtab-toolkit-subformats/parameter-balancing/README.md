@@ -18,9 +18,9 @@ The model files
 stem directly from the Parameter Balancing github repo (directory standalone_version/files/example_files/teusink)
 
 
-------------------------------------------
-Current format used in Parameter Balancing
-------------------------------------------
+----------------------------------
+Format used in Parameter Balancing
+----------------------------------
 
 Typically in modeldata file (includes options and prior)
 
@@ -44,7 +44,7 @@ Typically in result file:
 Details on table types (Parameter Balancing)
 -----------------------------------------------------
 
-(from model file:)
+## In model file
 
 TableID='PbConfig' TableType='PbConfig'  
 !Option  
@@ -90,7 +90,7 @@ TableID='QuantityInfo'  TableType='QuantityInfo'
 !Abbreviation  
 !MatrixInfo
 
-(from input data file:)
+## In input data file
 
 !!Quantity  
 !QuantityType  
@@ -104,7 +104,7 @@ TableID='QuantityInfo'  TableType='QuantityInfo'
 !Compound:Identifiers:kegg.compound  
 !Reference
 
-(from output file:)
+## In output file
 
 TableID="QuantityData" TableType="QuantityData"  
 !QuantityType  
