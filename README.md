@@ -10,3 +10,9 @@ This package is released under the [GNU General Public License](LICENSE).
 
 ## Contact
 Please contact [Wolfram Liebermeister](mailto:wolfram.liebermeister@gmail.com) with any questions or comments.
+
+-------------------------------------
+Table type "SBtab-toolkit" - overview
+-------------------------------------
+
+DocumentType="SBtab-toolkit"
