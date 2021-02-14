@@ -16,7 +16,7 @@ Output
 
 ### File formats
 
-Model file e_coli_noor_2016_ECM_Model.tsv 
+Model file e_coli_noor_2016_ECM_Model.tsv  
 !!Reaction  
 !!Compound  
 !!Parameter  
@@ -26,8 +26,8 @@ Model file e_coli_noor_2016_ECM_Model.tsv
 !!EnzymeCostWeight
 
 Validation data file e_coli_noor_2016_ECM_ValidationData.tsv  
-!!FluxData
-!!MetaboliteConcentrationData
+!!FluxData  
+!!MetaboliteConcentrationData  
 !!EnzymeConcentrationData
 
 Options file (all options, written after ECM)  
@@ -35,7 +35,61 @@ Options file (all options, written after ECM)
 
 Result file demo_ecm_e_coli_noor_2016_ModelState.tsv
 
+!!TableID='Reaction' TableType='Reaction'
+!ID
+!ReactionFormula
+!Name
+!Identifiers:kegg.reaction
+!IsReversible
+!Gene
+
+!!TableID='Compound' TableType='Compound'
+!ID
+!Name
+!NameForPlots
+!Identifiers:kegg.compound
+!IsConstant
+!InitialConcentration
+
+!!TableID='Position' TableType='Position'
+!Element
+!PositionX
+!PositionY			
+
+!!TableID='Parameter' TableType='Quantity'
+!QuantityType
+!Reaction
+!Compound
+!Mode
+!Unit	
+
+!!TableID='MetaboliteConcentration' TableType='Quantity'
+!QuantityType
+!Metabolite
+!Value
+
 Result file demo_ecm_e_coli_noor_2016_StateRuns.tsv  
+
+!!TableID='MetabolicFlux' TableType='QuantityMatrix' Unit='mM/s'					
+!QuantityType	!Reaction	data			
+
+!!TableID='MetaboliteConcentration' TableType='QuantityMatrix'
+!QuantityType	!Compound	data	fixed	initial	emc4cm
+
+!!TableID='EnzymeConcentration' TableType='QuantityMatrix'
+!QuantityType	!Reaction	data	emc4cm		
+
+!!TableID='ReactionGibbsFreeEnergy' TableType='QuantityMatrix'
+!QuantityType	!Reaction	initial	emc4cm		
+
+!!TableID='EnzymeCapacity' TableType='QuantityMatrix'
+!QuantityType	!Reaction	!Value			
+
+!!TableID='EnergeticEfficiency' TableType='QuantityMatrix' Unit='dimensionless'					
+!QuantityType	!Reaction	emc4cm			
+
+!!TableID='SaturationEfficiency' TableType='QuantityMatrix' Unit='dimensionless'					
+!QuantityType	!Reaction	emc4cm			
 
 
 -------------------------------------
