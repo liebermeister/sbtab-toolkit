@@ -35,46 +35,46 @@ PPC_R00345	Orthophosphate + Oxaloacetate <=> CO2 + Phosphoenolpyruvate	PPC_R0034
 					
 !!SBtab TableID='Compound' TableType='Compound' TableName='Compound'					
 !ID	!Name	!NameForPlots	!Identifiers:kegg.compound	!IsConstant	!InitialConcentration
-_S__Malate	(S)-Malate		C00149	False	9.9996407
-Acetyl_CoA	Acetyl-CoA		C00024	False	0.10826723
-Fumarate	Fumarate		C00122	False	4.1895753
-cis_Aconitate	cis-Aconitate		C00417	False	0.094177542
-_6_Phospho_D_gluconate	6-Phospho-D-gluconate		C00345	False	0.29255296
-Orthophosphate	Orthophosphate		C00009	True	9.9999684
-Pyruvate	Pyruvate		C00022	False	0.073916197
-NADPplus	NADP+		C00006	True	0.29639032
-NADPH	NADPH		C00005	True	0.03586374
-NADH	NADH		C00004	True	0.0010000109
-NADplus	NAD+		C00003	True	9.9999518
-ATP	ATP		C00002	True	1.2495132
-H2O	H2O		C00001	True	0.10000031
-_2_Oxoglutarate	2-Oxoglutarate		C00026	False	0.27073784
-Oxaloacetate	Oxaloacetate		C00036	True	1.2985177
-Ubiquinone	Ubiquinone		C00399	True	0.17823167
-D_Erythrose_4_phosphate	D-Erythrose 4-phosphate		C00279	False	0.24119619
-Ubiquinol	Ubiquinol		C00390	True	0.098963753
-ADP	ADP		C00008	True	0.5878448
-Isocitrate	Isocitrate		C00311	False	0.024231532
-D_Ribulose_5_phosphate	D-Ribulose 5-phosphate		C00199	False	1.2512971
-D_Xylulose_5_phosphate	D-Xylulose 5-phosphate		C00231	False	2.7330297
-D_Glucose_6_phosphate	D-Glucose 6-phosphate		C00092	True	2.3948854
-_3_Phospho_D_glyceroyl_phosphate	3-Phospho-D-glyceroyl phosphate		C00236	False	0.084157722
-CoA	CoA		C00010	False	0.083180114
-CO2	CO2		C00011	True	0.0038828607
-D_Ribose_5_phosphate	D-Ribose 5-phosphate		C00117	False	1.6874729
-Glycerone_phosphate	Glycerone phosphate		C00111	False	1.6742208
-D_Glucose	D-Glucose		C00031	True	0.15302738
-D_Fructose_1_6_bisphosphate	D-Fructose 1,6-bisphosphate		C00354	True	4.9819641
-D_Glyceraldehyde_3_phosphate	D-Glyceraldehyde 3-phosphate		C00118	True	0.14576503
-Phosphoenolpyruvate	Phosphoenolpyruvate		C00074	True	0.079213279
-Citrate	Citrate		C00158	False	9.9999881
-Succinyl_CoA	Succinyl-CoA		C00091	False	0.21549668
-_3_Phospho_D_glycerate	3-Phospho-D-glycerate		C00197	False	2.0992406
-D_Glucono_1_5_lactone_6_phosphate	D-Glucono-1,5-lactone 6-phosphate		C01236	False	0.10092994
-D_Fructose_6_phosphate	D-Fructose 6-phosphate		C00085	True	0.1366252
-_2_Phospho_D_glycerate	2-Phospho-D-glycerate		C00631	False	0.13039162
-Succinate	Succinate		C00042	False	0.17691428
-Sedoheptulose_7_phosphate	Sedoheptulose 7-phosphate		C05382	False	5.3471215
+_S__Malate	(S)-Malate		C00149	False	0.62391068
+Acetyl_CoA	Acetyl-CoA		C00024	False	0.16862803
+Fumarate	Fumarate		C00122	False	0.23530747
+cis_Aconitate	cis-Aconitate		C00417	False	0.092659675
+_6_Phospho_D_gluconate	6-Phospho-D-gluconate		C00345	False	0.13737008
+Orthophosphate	Orthophosphate		C00009	True	6.1863028
+Pyruvate	Pyruvate		C00022	False	0.092514649
+NADPplus	NADP+		C00006	True	0.13788159
+NADPH	NADPH		C00005	True	0.073614837
+NADH	NADH		C00004	True	0.0037011996
+NADplus	NAD+		C00003	True	5.8496006
+ATP	ATP		C00002	True	0.59169049
+H2O	H2O		C00001	True	0.099999759
+_2_Oxoglutarate	2-Oxoglutarate		C00026	False	0.12271177
+Oxaloacetate	Oxaloacetate		C00036	True	0.016363283
+Ubiquinone	Ubiquinone		C00399	True	0.10233621
+D_Erythrose_4_phosphate	D-Erythrose 4-phosphate		C00279	False	0.080445127
+Ubiquinol	Ubiquinol		C00390	True	0.09997353
+ADP	ADP		C00008	True	0.24141014
+Isocitrate	Isocitrate		C00311	False	0.028751663
+D_Ribulose_5_phosphate	D-Ribulose 5-phosphate		C00199	False	0.1949934
+D_Xylulose_5_phosphate	D-Xylulose 5-phosphate		C00231	False	0.49579572
+D_Glucose_6_phosphate	D-Glucose 6-phosphate		C00092	True	1.0323428
+_3_Phospho_D_glyceroyl_phosphate	3-Phospho-D-glyceroyl phosphate		C00236	False	0.034955337
+CoA	CoA		C00010	False	0.086570599
+CO2	CO2		C00011	True	0.11611159
+D_Ribose_5_phosphate	D-Ribose 5-phosphate		C00117	False	0.3025041
+Glycerone_phosphate	Glycerone phosphate		C00111	False	1.1193932
+D_Glucose	D-Glucose		C00031	True	0.1204111
+D_Fructose_1_6_bisphosphate	D-Fructose 1,6-bisphosphate		C00354	True	2.1516544
+D_Glyceraldehyde_3_phosphate	D-Glyceraldehyde 3-phosphate		C00118	True	0.099901716
+Phosphoenolpyruvate	Phosphoenolpyruvate		C00074	True	0.10163763
+Citrate	Citrate		C00158	False	8.7291259
+Succinyl_CoA	Succinyl-CoA		C00091	False	0.14099
+_3_Phospho_D_glycerate	3-Phospho-D-glycerate		C00197	False	2.0126
+D_Glucono_1_5_lactone_6_phosphate	D-Glucono-1,5-lactone 6-phosphate		C01236	False	0.10001714
+D_Fructose_6_phosphate	D-Fructose 6-phosphate		C00085	True	0.086200495
+_2_Phospho_D_glycerate	2-Phospho-D-glycerate		C00631	False	0.13504796
+Succinate	Succinate		C00042	False	0.099597956
+Sedoheptulose_7_phosphate	Sedoheptulose 7-phosphate		C05382	False	0.50205579
 					
 !!SBtab TableID='Position' TableType='Position' TableName='Position'					
 !Element	!PositionX	!PositionY			
@@ -451,43 +451,43 @@ molecular mass		Sedoheptulose_7_phosphate	290	Da
 					
 !!SBtab TableID='MetaboliteConcentration' TableType='Quantity' TableName='Metabolite concentration'					
 !QuantityType	!Metabolite	!Value			
-concentration	_S__Malate	9.9996407			
-concentration	Acetyl_CoA	0.10826723			
-concentration	Fumarate	4.1895753			
-concentration	cis_Aconitate	0.094177542			
-concentration	_6_Phospho_D_gluconate	0.29255296			
-concentration	Orthophosphate	9.9999684			
-concentration	Pyruvate	0.073916197			
-concentration	NADPplus	0.29639032			
-concentration	NADPH	0.03586374			
-concentration	NADH	0.0010000109			
-concentration	NADplus	9.9999518			
-concentration	ATP	1.2495132			
-concentration	H2O	0.10000031			
-concentration	_2_Oxoglutarate	0.27073784			
-concentration	Oxaloacetate	1.2985177			
-concentration	Ubiquinone	0.17823167			
-concentration	D_Erythrose_4_phosphate	0.24119619			
-concentration	Ubiquinol	0.098963753			
-concentration	ADP	0.5878448			
-concentration	Isocitrate	0.024231532			
-concentration	D_Ribulose_5_phosphate	1.2512971			
-concentration	D_Xylulose_5_phosphate	2.7330297			
-concentration	D_Glucose_6_phosphate	2.3948854			
-concentration	_3_Phospho_D_glyceroyl_phosphate	0.084157722			
-concentration	CoA	0.083180114			
-concentration	CO2	0.0038828607			
-concentration	D_Ribose_5_phosphate	1.6874729			
-concentration	Glycerone_phosphate	1.6742208			
-concentration	D_Glucose	0.15302738			
-concentration	D_Fructose_1_6_bisphosphate	4.9819641			
-concentration	D_Glyceraldehyde_3_phosphate	0.14576503			
-concentration	Phosphoenolpyruvate	0.079213279			
-concentration	Citrate	9.9999881			
-concentration	Succinyl_CoA	0.21549668			
-concentration	_3_Phospho_D_glycerate	2.0992406			
-concentration	D_Glucono_1_5_lactone_6_phosphate	0.10092994			
-concentration	D_Fructose_6_phosphate	0.1366252			
-concentration	_2_Phospho_D_glycerate	0.13039162			
-concentration	Succinate	0.17691428			
-concentration	Sedoheptulose_7_phosphate	5.3471215			
+concentration	_S__Malate	0.62391068			
+concentration	Acetyl_CoA	0.16862803			
+concentration	Fumarate	0.23530747			
+concentration	cis_Aconitate	0.092659675			
+concentration	_6_Phospho_D_gluconate	0.13737008			
+concentration	Orthophosphate	6.1863028			
+concentration	Pyruvate	0.092514649			
+concentration	NADPplus	0.13788159			
+concentration	NADPH	0.073614837			
+concentration	NADH	0.0037011996			
+concentration	NADplus	5.8496006			
+concentration	ATP	0.59169049			
+concentration	H2O	0.099999759			
+concentration	_2_Oxoglutarate	0.12271177			
+concentration	Oxaloacetate	0.016363283			
+concentration	Ubiquinone	0.10233621			
+concentration	D_Erythrose_4_phosphate	0.080445127			
+concentration	Ubiquinol	0.09997353			
+concentration	ADP	0.24141014			
+concentration	Isocitrate	0.028751663			
+concentration	D_Ribulose_5_phosphate	0.1949934			
+concentration	D_Xylulose_5_phosphate	0.49579572			
+concentration	D_Glucose_6_phosphate	1.0323428			
+concentration	_3_Phospho_D_glyceroyl_phosphate	0.034955337			
+concentration	CoA	0.086570599			
+concentration	CO2	0.11611159			
+concentration	D_Ribose_5_phosphate	0.3025041			
+concentration	Glycerone_phosphate	1.1193932			
+concentration	D_Glucose	0.1204111			
+concentration	D_Fructose_1_6_bisphosphate	2.1516544			
+concentration	D_Glyceraldehyde_3_phosphate	0.099901716			
+concentration	Phosphoenolpyruvate	0.10163763			
+concentration	Citrate	8.7291259			
+concentration	Succinyl_CoA	0.14099			
+concentration	_3_Phospho_D_glycerate	2.0126			
+concentration	D_Glucono_1_5_lactone_6_phosphate	0.10001714			
+concentration	D_Fructose_6_phosphate	0.086200495			
+concentration	_2_Phospho_D_glycerate	0.13504796			
+concentration	Succinate	0.099597956			
+concentration	Sedoheptulose_7_phosphate	0.50205579			

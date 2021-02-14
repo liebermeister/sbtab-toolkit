@@ -1,10 +1,10 @@
-!!SBtab TableName='Options for ECM' TableID='OptionsECM' TableType='Config' Method='enzyme-cost-minimization'	
+!!SBtab TableName='Options for ECM' TableID='ConfigureECM' TableType='Config' Method='enzyme-cost-minimization'	
 !Option	!Value
 model_name	E. coli central carbon metabolism
 run_id	RUN
 model_id	MODEL
-c_data	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
-u_data	[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+c_data	[1.6853424,606,0.54824225,0.0161,0.27853881,null,1.4051541,0.011288198,0.11389157,0.02741513,2.1128133,3.4491395,null,0.6369486,null,null,0.026636791,null,0.60461237,0.008160872,0.65875602,0.59461428,0.94916067,0.050794221,1.37,null,0.23022876,1.3202889,17363,1.1609581,null,0.35315771,0.7028625,233,0.79582005,null,0.33596722,null,1.1853254,null]
+u_data	[0.022041994,0.0076401396,0.0039637064,0.036878909,0.012351088,0.078183154,0.066486318,0.025035945,0.060028482,0.017940462,0.0096560338,0.002049105,0.0029922911,0.023413599,0.0045797663,0.00087012239,0.007699919,0.020051007,0.007699919,null,0.016059072,0.0136,0.013601474,0.055910345,0.0028328794,0.010316928,0.0014280635,0.0030969051,0.088237717,0.0060327379]
 kinetics	cs
 parametrisation	catalytic rate constant
 reaction_units	concentration per time
