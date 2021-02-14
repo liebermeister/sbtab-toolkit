@@ -99,7 +99,7 @@ Details on table types (ECM)
 !Compound:Identifiers:kegg.compound  
 !ID
 
-!!TableID='Layout' TableType='Position'  
+!!TableID='Position' TableType='Position'  
 !Element  
 !PositionX  
 !PositionY					

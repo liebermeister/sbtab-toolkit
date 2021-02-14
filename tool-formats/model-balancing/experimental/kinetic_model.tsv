@@ -76,7 +76,7 @@ _2_Phospho_D_glycerate	2-Phospho-D-glycerate	2-Phospho-D-glycerate	C00631	False
 Succinate	Succinate	Succinate	C00042	False		
 Sedoheptulose_7_phosphate	Sedoheptulose 7-phosphate	Sedoheptulose 7-phosphate	C05382	False		
 						
-!!SBtab TableID='Layout' TableType='Position' TableName='Network layout'						
+!!SBtab TableID='Position' TableType='Position' TableName='Network layout'						
 !Element	!PositionX	!PositionY				
 _S__Malate	0.23242741	0.47592279				
 Acetyl_CoA	0	0.27511816				

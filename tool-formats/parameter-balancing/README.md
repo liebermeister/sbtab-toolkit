@@ -4,24 +4,23 @@ SBtab files used in parameter balancing
 Files
 ----------------------------------
 
-The configuration files
+Configuration files
 
 * definitions.tsv (= SBtab-parameter-balancing schema file)
 * pb_options.tsv
 * pb_prior.tsv
 
-are copies from the Parameter Balancing github repository (directory standalone_version/files/default_files)
+(copies from the Parameter Balancing github repository, directory standalone_version/files/default_files)
 
-The example files
+Example files
 
 * teusink/teusink_data.tsv
 * teusink/teusink_modeldata.tsv
 * teusink/teusink_result.tsv
   
-are copies from the Parameter Balancing github repo (directory standalone_version/files/example_files/teusink)
+(copies from the Parameter Balancing github repository, directory standalone_version/files/example_files/teusink)
 
-
-Format used in Parameter Balancing
+Tables used in Parameter Balancing
 ----------------------------------
 
 Options file:  
@@ -40,7 +39,7 @@ Experimental data file:
 !!ParameterData
 
 Result file:  
-!!Parameter
+!!ParameterBalanced
 
 
 ----------------------
@@ -50,8 +49,7 @@ Details on table types
 ### Options file
 
 !!TableID='ConfigurePB' TableType='Config'  
-!Option  
-!Value
+!Option | !Value
 
 ### Model file
 
@@ -113,7 +111,7 @@ Details on table types
 
 ### Output data file
 
-!!TableID="Parameter" TableType="Quantity"  
+!!TableID="ParameterBalanced" TableType="Quantity"  
 !QuantityType  
 !SBML:reaction:id  
 !SBML:species:id  

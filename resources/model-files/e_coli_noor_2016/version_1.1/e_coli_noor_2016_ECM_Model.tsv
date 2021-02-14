@@ -380,7 +380,7 @@ molecular mass		_2_Phospho_D_glycerate	186	Da		C00631
 molecular mass		Succinate	118	Da		C00042	
 molecular mass		Sedoheptulose_7_phosphate	290	Da		C05382	
 							
-!!SBtab TableID='Layout' TableType='Position'							
+!!SBtab TableID='Position' TableType='Position'							
 !Element	!PositionX	!PositionY	!HideInPlot				
 _S__Malate	0.3277	0.09506	0				
 Acetyl_CoA	0.3594	229	0				
