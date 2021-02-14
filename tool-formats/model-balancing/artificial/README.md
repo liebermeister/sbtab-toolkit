@@ -20,13 +20,14 @@ Model double_branch_model_artificial (file provenance see below)
 Format used in Model Balancing
 ----------------------------------
 
-Option file:  
+Options file options.tsv:  
 !!ConfigureModelBalancing
 
-Model file:  
+Model file true_kinetic_model.tsv:  
 !!Reaction  
 !!Compound  
 !!Parameter  
+!!ConcentrationConstraint
 
 Kinetic data file:  
 !!ParameterData  
@@ -55,7 +56,7 @@ Details on table types
 !Option  
 !Value
 
-### In model and data file 
+### In model file 
 
 !!TableID='Reaction' TableType='Reaction'  
 !ID  
@@ -69,6 +70,19 @@ Details on table types
 !Name  
 !Identifiers:kegg.compound  
 !IsConstant
+
+!!TableID='Parameter' TableType='Quantity'  
+!QuantityType  
+!Reaction  
+!Compound  
+!Mode  
+!Unit
+				
+!!TableID='ConcentrationConstraint' TableType='Quantity'  
+!QuantityType  
+!Compound  
+!Min  
+!Max	
 
 Kinetic data file
 
@@ -140,8 +154,8 @@ run = 'no_noise_with_noisefree_kinetic_data';
 cmb_artificial_data;
 
 cd /home/wolfram/projekte/model_balancing/matlab/results/double_branch_model_artificial/no_noise_with_noisefree_kinetic_data/data  
-cp options.tsv            ~/projekte/sbtab/sbtab-toolkit/github/sbtab-toolkit/sbtab-toolkit-formats/model-balancing/  
-cp true_kinetic_model.tsv ~/projekte/sbtab/sbtab-toolkit/github/sbtab-toolkit/sbtab-toolkit-formats/model-balancing/  
-cp kinetic_data.tsv       ~/projekte/sbtab/sbtab-toolkit/github/sbtab-toolkit/sbtab-toolkit-formats/model-balancing/  
-cp state_data.tsv         ~/projekte/sbtab/sbtab-toolkit/github/sbtab-toolkit/sbtab-toolkit-formats/model-balancing/  
-cp state_results.tsv      ~/projekte/sbtab/sbtab-toolkit/github/sbtab-toolkit/sbtab-toolkit-formats/model-balancing/
+cp options.tsv            ~/projekte/sbtab/sbtab-toolkit/github/sbtab-toolkit/tool-formats/model-balancing/artificial  
+cp true_kinetic_model.tsv ~/projekte/sbtab/sbtab-toolkit/github/sbtab-toolkit/tool-formats/model-balancing/artificial  
+cp kinetic_data.tsv       ~/projekte/sbtab/sbtab-toolkit/github/sbtab-toolkit/tool-formats/model-balancing/artificial  
+cp state_data.tsv         ~/projekte/sbtab/sbtab-toolkit/github/sbtab-toolkit/tool-formats/model-balancing/artificial  
+cp state_results.tsv      ~/projekte/sbtab/sbtab-toolkit/github/sbtab-toolkit/tool-formats/model-balancing/artificial
