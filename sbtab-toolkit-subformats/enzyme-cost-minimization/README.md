@@ -20,15 +20,15 @@ Current format used in ECM
 
 Typically in model file  (e.g. 'FILENAME_ModelData')
 
-!!TableID='ConfigureECM'            TableType='Config'
-!!TableID='Reaction'                TableType='Reaction'
-!!TableID='Compound'                TableType='Compound'
-!!TableID='Thermodynamics'          TableType='Quantity'
-!!TableID='Parameter'               TableType='Quantity'
-!!TableID='Flux'                    TableType='Quantity'
-!!TableID='GibbsEnergyOfReaction'   TableType='Quantity'
-!!TableID='ConcentrationConstraint' TableType='Quantity'
-!!TableID='EnzymeCostWeight'        TableType='Quantity'
+!!TableID='ConfigureECM'            TableType='Config'  
+!!TableID='Reaction'                TableType='Reaction'  
+!!TableID='Compound'                TableType='Compound'  
+!!TableID='Thermodynamics'          TableType='Quantity'  
+!!TableID='Parameter'               TableType='Quantity'  
+!!TableID='Flux'                    TableType='Quantity'  
+!!TableID='GibbsEnergyOfReaction'   TableType='Quantity'  
+!!TableID='ConcentrationConstraint' TableType='Quantity'  
+!!TableID='EnzymeCostWeight'        TableType='Quantity'  
 
 TO do's:
 * !!ConcentrationConstraint TableType='' (should be renamed into !!MetaboliteRange)
@@ -45,83 +45,83 @@ Typically in experimental data file  (e.g. 'FILENAME_ValidationData')
 Details on table types (ECM)
 -------------------------------------
 
-TableID='Config' TableType='Config'
-!Option
-!Value
-!Comment                
+TableID='Config' TableType='Config'  
+!Option  
+!Value  
+!Comment                  
 
-TableID='Reaction' TableType='Reaction'
-!ID
-!ReactionFormula
-!Identifiers:kegg.reaction
-!IsReversible
-!Gene
+TableID='Reaction' TableType='Reaction'  
+!ID  
+!ReactionFormula  
+!Identifiers:kegg.reaction  
+!IsReversible  
+!Gene  
 !NameForPlots
 
-TableID='Compound' TableType='Compound'
-!ID
-!Name
-!Identifiers:kegg.compound
-!IsConstant
-!NameForPlots
+TableID='Compound' TableType='Compound'  
+!ID  
+!Name  
+!Identifiers:kegg.compound  
+!IsConstant  
+!NameForPlots  
 
-TableID='Thermodynamics' TableType='Quantity' StandardConcentration='M'				
-!QuantityType
-!Reaction
-!Compound
-!Value
+TableID='Thermodynamics' TableType='Quantity' StandardConcentration='M'  
+!QuantityType  
+!Reaction  
+!Compound  
+!Value  
 !Unit
 
-TableID='Parameter' TableType='Quantity'
-!QuantityType
-!Reaction
-!Compound
-!Value
-!Unit
-!Reaction:Identifiers:kegg.reaction
-!Compound:Identifiers:kegg.compound
+TableID='Parameter' TableType='Quantity'  
+!QuantityType  
+!Reaction  
+!Compound  
+!Value  
+!Unit  
+!Reaction:Identifiers:kegg.reaction  
+!Compound:Identifiers:kegg.compound  
 !ID
 
-TableID='Layout' TableType='Position'
-!Element
-!PositionX
+TableID='Layout' TableType='Position'  
+!Element  
+!PositionX  
 !PositionY					
 
-TableID='Flux' TableType='Quantity' Unit='mM/s'
-!QuantityType
-!Reaction
-!Reaction:Identifiers:kegg.reaction
+TableID='Flux' TableType='Quantity' Unit='mM/s'  
+!QuantityType  
+!Reaction  
+!Reaction:Identifiers:kegg.reaction  
 !Value
 
-TableID='GibbsEnergyOfReaction' TableType='Quantity' Unit='kJ/mol'
-!QuantityType
-!Reaction
-!Reaction:Identifiers:kegg.reaction
-!Value
-!OriginalValue
+TableID='GibbsEnergyOfReaction' TableType='Quantity' Unit='kJ/mol'  
+!QuantityType  
+!Reaction  
+!Reaction:Identifiers:kegg.reaction  
+!Value  
+!OriginalValue  
 !ReactionFormula
 
-TableID='ConcentrationConstraint' TableType='Quantity' Unit='mM'
-!QuantityType
-!Compound
-!Compound:Identifiers:kegg.compound
-!Concentration:Min
+TableID='ConcentrationConstraint' TableType='Quantity' Unit='mM'  
+!QuantityType  
+!Compound  
+!Compound:Identifiers:kegg.compound  
+!Concentration:Min  
 !Concentration:Max
 
-TableID='EnzymeCostWeight' TableType='Quantity' Unit='ArbitraryUnits'
-!QuantityType
-!Reaction
-!Reaction:Identifiers:kegg.reaction
+TableID='EnzymeCostWeight' TableType='Quantity' Unit='ArbitraryUnits'  
+!QuantityType  
+!Reaction  
+!Reaction:Identifiers:kegg.reaction  
 !Value
 
-TableID='ConcentrationData' TableType='Quantity' Unit='mM'
-!QuantityType
-!Compound
-!Compound:Identifiers:kegg.compound
+TableID='ConcentrationData' TableType='Quantity' Unit='mM'  
+!QuantityType  
+!Compound  
+!Compound:Identifiers:kegg.compound  
 !Value
 
-TableID='EnzymeData' TableType='Quantity' Unit='mM'
-!QuantityType
-!Reaction
-!Reaction:Identifiers:kegg.reaction
+TableID='EnzymeData' TableType='Quantity' Unit='mM'  
+!QuantityType  
+!Reaction  
+!Reaction:Identifiers:kegg.reaction  
 !Value
