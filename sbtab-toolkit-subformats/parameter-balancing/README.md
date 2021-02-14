@@ -1,13 +1,13 @@
 SBtab files used in parameter balancing
 =======================================
 
-The files
+The configuration files
 
 * definitions.tsv (= SBtab-parameter-balancing schema file)
 * pb_options.tsv
 * pb_prior.tsv
 
-stem directly from the Parameter Balancing github repo (directory standalone_version/files/default_files)
+are copies from the Parameter Balancing github repository (directory standalone_version/files/default_files)
 
 The model files
 
@@ -15,7 +15,7 @@ The model files
 * teusink/teusink_modeldata.tsv
 * teusink/teusink_result.tsv
   
-stem directly from the Parameter Balancing github repo (directory standalone_version/files/example_files/teusink)
+are copies from the Parameter Balancing github repo (directory standalone_version/files/example_files/teusink)
 
 
 ----------------------------------
@@ -24,19 +24,19 @@ Format used in Parameter Balancing
 
 Typically in modeldata file (includes options and prior)
 
-!!PbConfig     TableType='Config'
-!!Compartment  TableType='Compartment'
-!!Compound     TableType='CompoundÄ
-!!Reaction     TableType='Reaction'
+!!PbConfig     TableType='Config'  
+!!Compartment  TableType='Compartment'  
+!!Compound     TableType='Compound'  
+!!Reaction     TableType='Reaction'  
 !!QuantityInfo TableType='QuantityInfo'
 
-Note: QuantityInfo (contains prior table; should be renamed, also in spec; maybe "QuantityProperties"?)
+Note:  
+QuantityInfo (contains prior table; should be renamed, also in spec; maybe "QuantityProperties"?)
 
-Typically in experimental data file:
-
+Typically in experimental data file:  
 !!Quantity (should be renamed into "!!ParameterData", and split into "!!ThermodynamicsData" and  "!!KineticsData")
 
-Typically in result file:
+Typically in result file:  
 !!QuantityData (should be renamed into "!!Parameter", and split into "!!Thermodynamics" and  "!!Kinetics")
 
 
