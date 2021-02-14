@@ -1,17 +1,26 @@
-SBtab files used in parameter balancing
+SBtab files used in model balancing
 =======================================
 
 Files
 ----------------------------------
 
+Options files
+* options.tsv
+
 Example file
 * demo_single_input_file_MODEL_AND_DATA.tsv
 
-Format used in Parameter Balancing
+Example state data file and result file
+* state_data.tsv 
+* metabolic_states.tsv 
+
+Format used in Model Balancing
 ----------------------------------
 
-Model and data file:
+Options file:  
+!!ConfigureModelBalancing
 
+Model and data file:  
 !!Reaction  
 !!Compound  
 !!Parameter  
@@ -19,18 +28,26 @@ Model and data file:
 !!MetaboliteConcentration  
 !!EnzymeConcentration
 
+Note that the model and data file in this example contains only one metabolic state!
+
+State data and result file:  
+!!MetabolicFlux
+!!MetaboliteConcentration
+!!EnzymeConcentration
+
+Note that the state data and result files in this example contain several metabolic states!
+
 ----------------------
 Details on table types
 ----------------------
 
+### In options file
+
+!!ConfigureModelBalancing TableID='ConfigureModelBalancing' TableType='Config'
+!Option  
+!Value
+
 ### In model and data file 
-
-
-
-
-
-
-
 
 !!Reaction TableID='Reaction' TableType='Reaction'  
 !ID  
@@ -74,3 +91,26 @@ Details on table types
 !Reaction:Identifiers:kegg.reaction  
 !Mean  
 !Std
+
+### In result file (note that data are in uncontrolled columns!)
+
+!!MetabolicFlux TableID='MetabolicFlux' TableType='QuantityMatrix'
+!QuantityType
+!Reaction
+Sample1_Mean
+Sample1_Std
+..
+
+!!MetaboliteConcentration TableID='MetaboliteConcentration' TableType='QuantityMatrix'
+!QuantityType
+!Compound
+Sample1_Mean
+Sample1_Std
+..
+
+!!EnzymeConcentration TableID='EnzymeConcentration' TableType='QuantityMatrix'
+!QuantityType
+!Reaction
+Sample1_Mean
+Sample1_Std
+..
