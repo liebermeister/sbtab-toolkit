@@ -14,9 +14,11 @@ Output
 * demo_ecm_e_coli_noor_2016_ModelState.tsv
 * demo_ecm_e_coli_noor_2016_StateRuns.tsv
 
-### File formats
+File formats
+------------
 
-Model file e_coli_noor_2016_ECM_Model.tsv  
+### Model file e_coli_noor_2016_ECM_Model.tsv  
+
 !!Reaction  
 !!Compound  
 !!Parameter  
@@ -25,15 +27,17 @@ Model file e_coli_noor_2016_ECM_Model.tsv
 !!ConcentrationConstraint  
 !!EnzymeCostWeight
 
-Validation data file e_coli_noor_2016_ECM_ValidationData.tsv  
+### Validation data file e_coli_noor_2016_ECM_ValidationData.tsv  
+
 !!FluxData  
 !!MetaboliteConcentrationData  
 !!EnzymeConcentrationData
 
-Options file (all options, written after ECM)  
+### Options file (all options, written after ECM)  
+
 !!ConfigureECM
 
-Result file demo_ecm_e_coli_noor_2016_ModelState.tsv
+###Result file demo_ecm_e_coli_noor_2016_ModelState.tsv
 
 !!TableID='Reaction' TableType='Reaction'  
 !ID
@@ -68,7 +72,7 @@ Result file demo_ecm_e_coli_noor_2016_ModelState.tsv
 !Metabolite
 !Value
 
-Result file demo_ecm_e_coli_noor_2016_StateRuns.tsv  
+### Result file demo_ecm_e_coli_noor_2016_StateRuns.tsv  
 
 !!TableID='MetabolicFlux' TableType='QuantityMatrix'  
 !QuantityType	!Reaction	data			
