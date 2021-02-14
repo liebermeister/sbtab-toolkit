@@ -24,16 +24,16 @@ are copies from the Parameter Balancing github repo (directory standalone_versio
 Format used in Parameter Balancing
 ----------------------------------
 
-Options file
+Options file:  
 !!ConfigurePB
 
-Model file
+Model file:  
 !!ConfigurePB  
 !!Compartment  
 !!Compound  
 !!Reaction
 
-Prior table file
+Prior table file:  
 !!PriorTable
 
 Experimental data file:  
