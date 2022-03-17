@@ -215,7 +215,7 @@ saturation efficiency	MDH_R00342	dimensionless	0.075838885
 saturation efficiency	PPC_R00345	dimensionless	0.21962672			
 					
 !!ObjTables type='Data' class='QuantityMatrixECM'					
-%/ TableName='Metabolic fluxes' TableID='MetabolicFlux' /%
+%/ TableName='Metabolic fluxes' TableID='Flux' /%
 !QuantityType	!Reaction	!Unit	!data			
 rate of reaction	PTS_RPTSsy	mM/s	0.5691			
 rate of reaction	PGI_R02740	mM/s	0.385			

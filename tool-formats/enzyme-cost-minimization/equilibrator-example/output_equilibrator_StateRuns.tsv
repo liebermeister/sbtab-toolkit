@@ -208,7 +208,7 @@ saturation efficiency	fum	0.23015489
 saturation efficiency	mdh	0.068095681			
 saturation efficiency	ppc	0.31886551			
 					
-!!SBtab TableName='Metabolic fluxes' TableID='MetabolicFlux' TableType='QuantityMatrix' Unit='mM/s'					
+!!SBtab TableName='Metabolic fluxes' TableID='Flux' TableType='QuantityMatrix' Unit='mM/s'					
 !QuantityType	!Reaction	data			
 rate of reaction	pts	0.5691			
 rate of reaction	pgi	0.385			
