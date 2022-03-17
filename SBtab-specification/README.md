@@ -1,1 +1,1 @@
-Current SBtab specification FYI
+SBtab specification
