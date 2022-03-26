@@ -267,11 +267,11 @@ Element	Attribute	Position	String
 PositionX	Attribute	Position	Float	
 PositionY	Attribute	Position	Float	
 				
-Thermodynamics	Class	Quantity		TableType Thermodynamics
-Parameter	Class	Quantity		TableType Parameter
-Flux	Class	Quantity		TableType Flux
-ConcentrationConstraint	Class	Quantity		TableType ConcentrationConstraint
-EnzymeCostWeight	Class	Quantity		TableType EnzymeCostWeight
+Thermodynamics	Class	Quantity	TableType	Thermodynamics
+Parameter	Class	Quantity	TableType	Parameter
+Flux	Class	Quantity	TableType	Flux
+ConcentrationConstraint	Class	Quantity	TableType	ConcentrationConstraint
+EnzymeCostWeight	Class	Quantity	TableType	EnzymeCostWeight
 				
 QuantityMatrix	Class		row	TableType	QuantityMatrix
 QuantityType	Attribute	QuantityMatrix	String
