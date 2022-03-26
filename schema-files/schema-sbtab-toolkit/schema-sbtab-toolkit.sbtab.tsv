@@ -272,7 +272,7 @@ Parameter	Class	Quantity		TableType Parameter
 Flux	Class	Quantity		TableType Flux
 ConcentrationConstraint	Class	Quantity		TableType ConcentrationConstraint
 EnzymeCostWeight	Class	Quantity		TableType EnzymeCostWeight
-
+				
 QuantityMatrix	Class		row	TableType QuantityMatrix
 QuantityType	Attribute	QuantityMatrix	String
 Unit	Attribute	QuantityMatrix	String
