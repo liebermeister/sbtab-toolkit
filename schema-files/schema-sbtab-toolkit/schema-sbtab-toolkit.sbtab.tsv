@@ -1,4 +1,4 @@
-!!SBtab TableID='definition' TableType='Definition'
+!!SBtab TableID='definition' TableType='Definition'				
 !ComponentName	!ComponentType	!IsPartOf	!Format	!Description
 				
 Comment	Attribute	Reaction	String	Comment
