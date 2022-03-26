@@ -274,8 +274,8 @@ ConcentrationConstraint	Class	Quantity	TableType	ConcentrationConstraint
 EnzymeCostWeight	Class	Quantity	TableType	EnzymeCostWeight
 				
 QuantityMatrix	Class	row	TableType	QuantityMatrix
-QuantityType	Attribute	QuantityMatrix	String
-Unit	Attribute	QuantityMatrix	String
-Reaction	Attribute	QuantityMatrix	String
-Compound	Attribute	QuantityMatrix	String
-Value	Attribute	QuantityMatrix	String
+QuantityType	Attribute	QuantityMatrix	String	QuantityType
+Unit	Attribute	QuantityMatrix	String	Unit
+Reaction	Attribute	QuantityMatrix	String	Reaction
+Compound	Attribute	QuantityMatrix	String	Compound
+Value	Attribute	QuantityMatrix	String	Value
